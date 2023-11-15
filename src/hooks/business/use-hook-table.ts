@@ -51,7 +51,7 @@ type CustomColumnKey<K = never> = K | 'action';
 /**
  * 表格的列
  */
-type HookTableColumn<T = Record<string, unknown>> =
+export type HookTableColumn<T = Record<string, unknown>> =
   | (Omit<TableColumnGroup<T>, 'key'> & { key: CustomColumnKey<keyof T> })
   | (Omit<DataTableBaseColumn<T>, 'key'> & { key: CustomColumnKey<keyof T> })
   | DataTableSelectionColumn<T>
@@ -138,13 +138,19 @@ export default function useHookTable<TableData, Fn extends ApiFn>(apiFn: Fn, con
   function updatePagination(update: Partial<PaginationProps>) {
     Object.assign(pagination, update);
 
-    updateRequestParamsByPagination({ page: pagination.page, pageSize: pagination.pageSize });
+    updateRequestParamsByPagination({
+      page: pagination.page,
+      pageSize: pagination.pageSize
+    });
   }
 
   async function getData() {
     startLoading();
 
     const { data: apiData, error } = await apiFn(requestParams.value);
+
+    // eslint-disable-next-line no-console
+    console.log('获取到的数据', apiData);
 
     if (!error && data) {
       const { data: tableData, pageNum, pageSize, total } = transformer(apiData);

@@ -1,12 +1,11 @@
 # Changelog
 
-
 ## [v0.10.4](https://github.com/honghuangdc/soybean-admin/compare/v0.10.3...v0.10.4) (23-09-20)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
 
 - **auth**:
-  - 防止多次刷新token &nbsp;-&nbsp; by @eAliwei [<samp>(0eaa3)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0eaa327)
+  - 防止多次刷新 token &nbsp;-&nbsp; by @eAliwei [<samp>(0eaa3)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0eaa327)
 - **hooks**:
   - add useHookTable &nbsp;-&nbsp; by @honghuangdc [<samp>(b3ae7)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b3ae760)
 - **projects**:
@@ -18,8 +17,8 @@
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
 - **components**:
-  - 修复动态路由主页404 &nbsp;-&nbsp; by @lapislazulisch [<samp>(3ae19)</samp>](https://github.com/honghuangdc/soybean-admin/commit/3ae1952)
-  - 修复动态路由home页404 &nbsp;-&nbsp; by @lapislazulisch [<samp>(ad6ac)</samp>](https://github.com/honghuangdc/soybean-admin/commit/ad6ac72)
+  - 修复动态路由主页 404 &nbsp;-&nbsp; by @lapislazulisch [<samp>(3ae19)</samp>](https://github.com/honghuangdc/soybean-admin/commit/3ae1952)
+  - 修复动态路由 home 页 404 &nbsp;-&nbsp; by @lapislazulisch [<samp>(ad6ac)</samp>](https://github.com/honghuangdc/soybean-admin/commit/ad6ac72)
 - **projects**:
   - fix set tab title (fixed #256) &nbsp;-&nbsp; by @honghuangdc in https://github.com/honghuangdc/soybean-admin/issues/256 [<samp>(13f6c)</samp>](https://github.com/honghuangdc/soybean-admin/commit/13f6cd8)
   - correct the lang file name & add recommend vscode plugin i18n-ally &nbsp;-&nbsp; by @honghuangdc [<samp>(864ec)</samp>](https://github.com/honghuangdc/soybean-admin/commit/864ec47)
@@ -38,7 +37,7 @@
 ### &nbsp;&nbsp;&nbsp;💅 Refactors
 
 - **projects**:
-  - 生产环境缓存主题变更为sessionStorage &nbsp;-&nbsp; by @honghuangdc [<samp>(c46a5)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c46a592)
+  - 生产环境缓存主题变更为 sessionStorage &nbsp;-&nbsp; by @honghuangdc [<samp>(c46a5)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c46a592)
   - add reCacheRoute method &nbsp;-&nbsp; by @honghuangdc [<samp>(f92ee)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f92ee77)
   - update soybean domain &nbsp;-&nbsp; by @honghuangdc [<samp>(073fd)</samp>](https://github.com/honghuangdc/soybean-admin/commit/073fd16)
 
@@ -171,7 +170,7 @@
   - Add routing data related to tree components and page display optimization &nbsp;-&nbsp; by **small_happy** [<samp>(a0f55)</samp>](https://github.com/honghuangdc/soybean-admin/commit/a0f55ac)
 - **projects**:
   - 返回顶部功能适配新布局 &nbsp;-&nbsp; by @yanbowe [<samp>(54e2c)</samp>](https://github.com/honghuangdc/soybean-admin/commit/54e2cb5)
-  - 增加i18n支持翻译菜单,tab,title &nbsp;-&nbsp; by **cc** [<samp>(3d48a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/3d48aa8)
+  - 增加 i18n 支持翻译菜单,tab,title &nbsp;-&nbsp; by **cc** [<samp>(3d48a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/3d48aa8)
   - add menu translate [翻译菜单] &nbsp;-&nbsp; by @soybeanjs [<samp>(f6828)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f68285f)
   - 增加主题切换过渡效果 &nbsp;-&nbsp; by **cc** [<samp>(8da88)</samp>](https://github.com/honghuangdc/soybean-admin/commit/8da8843)
   - support mobile layout [支持移动端布局] &nbsp;-&nbsp; by @soybeanjs [<samp>(f2b51)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f2b518e)
@@ -180,10 +179,10 @@
 
 - **projects**:
   - fix router guide [修复路由跳转异常] fixed #216 &nbsp;-&nbsp; by @soybeanjs in https://github.com/honghuangdc/soybean-admin/issues/216 [<samp>(59578)</samp>](https://github.com/honghuangdc/soybean-admin/commit/5957833)
-  - fix better-mock usage [修复better-mock用法] &nbsp;-&nbsp; by @soybeanjs [<samp>(c5764)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c57640a)
+  - fix better-mock usage [修复 better-mock 用法] &nbsp;-&nbsp; by @soybeanjs [<samp>(c5764)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c57640a)
   - tsconfig missing isolatedModules &nbsp;-&nbsp; by @kirklin [<samp>(ab49a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/ab49afd)
-  - fix mockjs [修复mockjs] &nbsp;-&nbsp; by @soybeanjs [<samp>(9b19f)</samp>](https://github.com/honghuangdc/soybean-admin/commit/9b19f96)
-  - add prod mockjs switch [添加生产模式的mockjs的开关] &nbsp;-&nbsp; by @soybeanjs [<samp>(9f563)</samp>](https://github.com/honghuangdc/soybean-admin/commit/9f5638f)
+  - fix mockjs [修复 mockjs] &nbsp;-&nbsp; by @soybeanjs [<samp>(9b19f)</samp>](https://github.com/honghuangdc/soybean-admin/commit/9b19f96)
+  - add prod mockjs switch [添加生产模式的 mockjs 的开关] &nbsp;-&nbsp; by @soybeanjs [<samp>(9f563)</samp>](https://github.com/honghuangdc/soybean-admin/commit/9f5638f)
   - 修复面包屑导航下拉菜单语言显示问题 &nbsp;-&nbsp; by **cc** [<samp>(ee8fa)</samp>](https://github.com/honghuangdc/soybean-admin/commit/ee8fa04)
   - hide the drawer when it is initial mobile mode [初始化时为移动端布局则隐藏侧边栏] fixed #238 &nbsp;-&nbsp; by @soybeanjs in https://github.com/honghuangdc/soybean-admin/issues/238 [<samp>(0abde)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0abde46)
 
@@ -197,19 +196,19 @@
 
 - **projects**:
   - update useTable &nbsp;-&nbsp; by @soybeanjs [<samp>(211ae)</samp>](https://github.com/honghuangdc/soybean-admin/commit/211ae1f)
-  - remove page examples: tree [去除tree相关示例页面] &nbsp;-&nbsp; by @soybeanjs [<samp>(f3090)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f309003)
-  - use better-mock replace mockjs [用better-mock替换mockjs] &nbsp;-&nbsp; by @soybeanjs [<samp>(9d3c7)</samp>](https://github.com/honghuangdc/soybean-admin/commit/9d3c732)
+  - remove page examples: tree [去除 tree 相关示例页面] &nbsp;-&nbsp; by @soybeanjs [<samp>(f3090)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f309003)
+  - use better-mock replace mockjs [用 better-mock 替换 mockjs] &nbsp;-&nbsp; by @soybeanjs [<samp>(9d3c7)</samp>](https://github.com/honghuangdc/soybean-admin/commit/9d3c732)
   - upgrade vue3.3, official support defineOptions &nbsp;-&nbsp; by @kirklin [<samp>(86a37)</samp>](https://github.com/honghuangdc/soybean-admin/commit/86a370f)
 
 ### &nbsp;&nbsp;&nbsp;📖 Documentation
 
 - **projects**:
-  - add qq to README.md [文档添加QQ群] &nbsp;-&nbsp; by @soybeanjs [<samp>(f74a6)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f74a642)
-  - update README.md [更新README.md] &nbsp;-&nbsp; by @soybeanjs [<samp>(39709)</samp>](https://github.com/honghuangdc/soybean-admin/commit/397092c)
-  - update README.md [更新README.md] &nbsp;-&nbsp; by @soybeanjs [<samp>(5a4f8)</samp>](https://github.com/honghuangdc/soybean-admin/commit/5a4f842)
-  - update README.md [更新README.md] &nbsp;-&nbsp; by @soybeanjs [<samp>(a765d)</samp>](https://github.com/honghuangdc/soybean-admin/commit/a765da6)
-  - update README.md [更新README.md] &nbsp;-&nbsp; by @soybeanjs [<samp>(a989b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/a989b44)
-  - 优化README.md &nbsp;-&nbsp; by @greper [<samp>(6ea75)</samp>](https://github.com/honghuangdc/soybean-admin/commit/6ea755f)
+  - add qq to README.md [文档添加 QQ 群] &nbsp;-&nbsp; by @soybeanjs [<samp>(f74a6)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f74a642)
+  - update README.md [更新 README.md] &nbsp;-&nbsp; by @soybeanjs [<samp>(39709)</samp>](https://github.com/honghuangdc/soybean-admin/commit/397092c)
+  - update README.md [更新 README.md] &nbsp;-&nbsp; by @soybeanjs [<samp>(5a4f8)</samp>](https://github.com/honghuangdc/soybean-admin/commit/5a4f842)
+  - update README.md [更新 README.md] &nbsp;-&nbsp; by @soybeanjs [<samp>(a765d)</samp>](https://github.com/honghuangdc/soybean-admin/commit/a765da6)
+  - update README.md [更新 README.md] &nbsp;-&nbsp; by @soybeanjs [<samp>(a989b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/a989b44)
+  - 优化 README.md &nbsp;-&nbsp; by @greper [<samp>(6ea75)</samp>](https://github.com/honghuangdc/soybean-admin/commit/6ea755f)
   - readme.md 二次开发的项目内容换行 &nbsp;-&nbsp; by @greper [<samp>(f3a17)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f3a1707)
   - update CHANGELOG.md &nbsp;-&nbsp; by @soybeanjs [<samp>(5f6ca)</samp>](https://github.com/honghuangdc/soybean-admin/commit/5f6caab)
 
@@ -218,7 +217,7 @@
 - **deps**:
   - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(db629)</samp>](https://github.com/honghuangdc/soybean-admin/commit/db62959)
   - update deps [升级依赖] &nbsp;-&nbsp; by @soybeanjs [<samp>(f2e82)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f2e82da)
-  - update deps and remove vite-plugin-html [升级依赖，去除vite-plugin-html] &nbsp;-&nbsp; by @soybeanjs [<samp>(eaf36)</samp>](https://github.com/honghuangdc/soybean-admin/commit/eaf3678)
+  - update deps and remove vite-plugin-html [升级依赖，去除 vite-plugin-html] &nbsp;-&nbsp; by @soybeanjs [<samp>(eaf36)</samp>](https://github.com/honghuangdc/soybean-admin/commit/eaf3678)
   - update deps [升级依赖] &nbsp;-&nbsp; by @soybeanjs [<samp>(bae17)</samp>](https://github.com/honghuangdc/soybean-admin/commit/bae1767)
   - update deps [升级依赖] &nbsp;-&nbsp; by @soybeanjs [<samp>(c2642)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c264216)
   - update deps [升级依赖] &nbsp;-&nbsp; by @soybeanjs [<samp>(40f85)</samp>](https://github.com/honghuangdc/soybean-admin/commit/40f8587)
@@ -256,7 +255,7 @@
 
 - **components**:
   - 页面跳转被拦截, 则会出现 tab 页签与页面不一致的问题 &nbsp;-&nbsp; by @taisha [<samp>(bd5dd)</samp>](https://github.com/honghuangdc/soybean-admin/commit/bd5dd2c)
-  - 修复iconSelect选择器点击事件失效 &nbsp;-&nbsp; by @yanbowe [<samp>(7e505)</samp>](https://github.com/honghuangdc/soybean-admin/commit/7e505f9)
+  - 修复 iconSelect 选择器点击事件失效 &nbsp;-&nbsp; by @yanbowe [<samp>(7e505)</samp>](https://github.com/honghuangdc/soybean-admin/commit/7e505f9)
   - refresh cached routes &nbsp;-&nbsp; by @taisha [<samp>(b0f98)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b0f98e4)
 - **projects**:
   - fix eslint svg cause incorrect icon render &nbsp;-&nbsp; by @soybeanjs [<samp>(0b5af)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0b5afda)
@@ -298,7 +297,7 @@
 
 - **projects**:
   - add github action &nbsp;-&nbsp; by @lixin59 [<samp>(f355a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f355a69)
-  - 修复issue模板格式问题 &nbsp;-&nbsp; by @lixin59 [<samp>(d8bab)</samp>](https://github.com/honghuangdc/soybean-admin/commit/d8baba5)
+  - 修复 issue 模板格式问题 &nbsp;-&nbsp; by @lixin59 [<samp>(d8bab)</samp>](https://github.com/honghuangdc/soybean-admin/commit/d8baba5)
 - **release**:
   - 0.9.9 &nbsp;-&nbsp; by @soybeanjs [<samp>(c0066)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c0066b2)
 
@@ -314,11 +313,11 @@
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
 
-- setting 页面新增 是否显示footer的开关 &nbsp;-&nbsp; by @zuihou [<samp>(d064f)</samp>](https://github.com/honghuangdc/soybean-admin/commit/d064f62)
-- 新增 affix 属性，用于将其固定在tab卡 &nbsp;-&nbsp; by @zuihou [<samp>(e772f)</samp>](https://github.com/honghuangdc/soybean-admin/commit/e772ff0)
+- setting 页面新增 是否显示 footer 的开关 &nbsp;-&nbsp; by @zuihou [<samp>(d064f)</samp>](https://github.com/honghuangdc/soybean-admin/commit/d064f62)
+- 新增 affix 属性，用于将其固定在 tab 卡 &nbsp;-&nbsp; by @zuihou [<samp>(e772f)</samp>](https://github.com/honghuangdc/soybean-admin/commit/e772ff0)
 - **projects**:
   - add compress script [添加压缩命令] &nbsp;-&nbsp; by @soybeanjs [<samp>(be6d4)</samp>](https://github.com/honghuangdc/soybean-admin/commit/be6d431)
-  - add script about generating png logo from [添加根据svg生成png图标的命令] &nbsp;-&nbsp; by @soybeanjs [<samp>(70aee)</samp>](https://github.com/honghuangdc/soybean-admin/commit/70aeefe)
+  - add script about generating png logo from [添加根据 svg 生成 png 图标的命令] &nbsp;-&nbsp; by @soybeanjs [<samp>(70aee)</samp>](https://github.com/honghuangdc/soybean-admin/commit/70aeefe)
   - add generate logo script &nbsp;-&nbsp; by @soybeanjs [<samp>(25daa)</samp>](https://github.com/honghuangdc/soybean-admin/commit/25daa23)
   - add new route plugin @soybeanjs/vite-plugin-vue-page-route [集成新的路由插件] &nbsp;-&nbsp; by @soybeanjs [<samp>(3131e)</samp>](https://github.com/honghuangdc/soybean-admin/commit/3131e00)
 
@@ -327,13 +326,13 @@
 - remove height limit h-360px &nbsp;-&nbsp; by @codearhat [<samp>(b5c57)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b5c570a)
 - set password attributes &nbsp;-&nbsp; by @codearhat [<samp>(a9a37)</samp>](https://github.com/honghuangdc/soybean-admin/commit/a9a3703)
 - **components**:
-  - 修复路由在path中包含重复路单词径菜单时，被激活会错误展开 &nbsp;-&nbsp; by @shabby2333 [<samp>(264da)</samp>](https://github.com/honghuangdc/soybean-admin/commit/264da00)
+  - 修复路由在 path 中包含重复路单词径菜单时，被激活会错误展开 &nbsp;-&nbsp; by @shabby2333 [<samp>(264da)</samp>](https://github.com/honghuangdc/soybean-admin/commit/264da00)
 - **projects**:
   - fix vite-pwa plugin config &nbsp;-&nbsp; by @soybeanjs [<samp>(94098)</samp>](https://github.com/honghuangdc/soybean-admin/commit/94098d0)
-  - add router-page.d.ts to git [将router-page.d.ts添加git提交] &nbsp;-&nbsp; by @soybeanjs [<samp>(7a580)</samp>](https://github.com/honghuangdc/soybean-admin/commit/7a58035)
+  - add router-page.d.ts to git [将 router-page.d.ts 添加 git 提交] &nbsp;-&nbsp; by @soybeanjs [<samp>(7a580)</samp>](https://github.com/honghuangdc/soybean-admin/commit/7a58035)
   - fix router when the dynamic routes api was failed [修复当动态路由接口失败后路由异常问题] &nbsp;-&nbsp; by @soybeanjs [<samp>(f2b58)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f2b580f)
   - fix login success message [修复登录成功的消息提示] &nbsp;-&nbsp; by @soybeanjs [<samp>(81039)</samp>](https://github.com/honghuangdc/soybean-admin/commit/810398a)
-  - 修复tabs在static路由模式下可以关闭首页 &nbsp;-&nbsp; by @yanbowe [<samp>(7211a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/7211a17)
+  - 修复 tabs 在 static 路由模式下可以关闭首页 &nbsp;-&nbsp; by @yanbowe [<samp>(7211a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/7211a17)
   - 修复动态路由模式下路由不排序的问题 &nbsp;-&nbsp; by @HnyLi [<samp>(58b27)</samp>](https://github.com/honghuangdc/soybean-admin/commit/58b27c9)
 
 ### &nbsp;&nbsp;&nbsp;💅 Refactors
@@ -341,10 +340,10 @@
 - **czg**:
   - update cz-git,czg breaking changes &nbsp;-&nbsp; by @yanbowe [<samp>(fcb7a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/fcb7ad9)
 - **hooks**:
-  - 重构hook函数取消监听方式 &nbsp;-&nbsp; by @yanbowe [<samp>(fd948)</samp>](https://github.com/honghuangdc/soybean-admin/commit/fd94886)
+  - 重构 hook 函数取消监听方式 &nbsp;-&nbsp; by @yanbowe [<samp>(fd948)</samp>](https://github.com/honghuangdc/soybean-admin/commit/fd94886)
 - **projects**:
   - format code style [调整代码格式] &nbsp;-&nbsp; by @soybeanjs [<samp>(a9d58)</samp>](https://github.com/honghuangdc/soybean-admin/commit/a9d58f8)
-  - import cz-git, czg replace @soybeanjs/cli [引入cz-git、czg替换@soybeanjs/cli] &nbsp;-&nbsp; by @soybeanjs [<samp>(1bdd8)</samp>](https://github.com/honghuangdc/soybean-admin/commit/1bdd81a)
+  - import cz-git, czg replace @soybeanjs/cli [引入 cz-git、czg 替换@soybeanjs/cli] &nbsp;-&nbsp; by @soybeanjs [<samp>(1bdd8)</samp>](https://github.com/honghuangdc/soybean-admin/commit/1bdd81a)
   - perfect scrollbar style [完善滚动条] &nbsp;-&nbsp; by @soybeanjs [<samp>(1a02c)</samp>](https://github.com/honghuangdc/soybean-admin/commit/1a02cab)
   - refactor app init loading [重构系统初始化的加载] &nbsp;-&nbsp; by @soybeanjs [<samp>(57bfe)</samp>](https://github.com/honghuangdc/soybean-admin/commit/57bfe27)
   - new storage system [新的本地数据存储系统] &nbsp;-&nbsp; by @soybeanjs [<samp>(97191)</samp>](https://github.com/honghuangdc/soybean-admin/commit/9719159)
@@ -387,19 +386,19 @@
   - 系统消息组件代码优化 &nbsp;-&nbsp; by @yanbowe [<samp>(95183)</samp>](https://github.com/honghuangdc/soybean-admin/commit/9518372)
   - 增加返回顶部功能 &nbsp;-&nbsp; by @yanbowe [<samp>(894b0)</samp>](https://github.com/honghuangdc/soybean-admin/commit/894b0f1)
   - 添加生产的主题配置缓存 &nbsp;-&nbsp; by @soybeanjs [<samp>(718c3)</samp>](https://github.com/honghuangdc/soybean-admin/commit/718c362)
-  - 添加provide、inject上下文示例 &nbsp;-&nbsp; by @soybeanjs [<samp>(a4447)</samp>](https://github.com/honghuangdc/soybean-admin/commit/a444731)
-  - 添加组件名称，调整vue文件里面的类型声明位置 &nbsp;-&nbsp; by @soybeanjs [<samp>(f64bc)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f64bc91)
-  - 适配移动端，修复Tab关闭图标的bug &nbsp;-&nbsp; by @soybeanjs [<samp>(296b1)</samp>](https://github.com/honghuangdc/soybean-admin/commit/296b154)
-  - 添加系统管理的页面 &nbsp;-&nbsp; by @soybeanjs [<samp>(c33b5)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c33b5eb)
-  - useNaiveTable函数：类型部分 &nbsp;-&nbsp; by @soybeanjs [<samp>(02992)</samp>](https://github.com/honghuangdc/soybean-admin/commit/02992dc)
-  - 添加请求适配adapter层应用的示例页面 &nbsp;-&nbsp; by @soybeanjs [<samp>(8d11a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/8d11a6a)
+  - 添加 provide、inject 上下文示例 &nbsp;-&nbsp; by @soybeanjs [<samp>(a4447)</samp>](https://github.com/honghuangdc/soybean-admin/commit/a444731)
+  - 添加组件名称，调整 vue 文件里面的类型声明位置 &nbsp;-&nbsp; by @soybeanjs [<samp>(f64bc)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f64bc91)
+  - 适配移动端，修复 Tab 关闭图标的 bug &nbsp;-&nbsp; by @soybeanjs [<samp>(296b1)</samp>](https://github.com/honghuangdc/soybean-admin/commit/296b154)
+  - 添加项目管理的页面 &nbsp;-&nbsp; by @soybeanjs [<samp>(c33b5)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c33b5eb)
+  - useNaiveTable 函数：类型部分 &nbsp;-&nbsp; by @soybeanjs [<samp>(02992)</samp>](https://github.com/honghuangdc/soybean-admin/commit/02992dc)
+  - 添加请求适配 adapter 层应用的示例页面 &nbsp;-&nbsp; by @soybeanjs [<samp>(8d11a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/8d11a6a)
   - 实现用户管理页面 &nbsp;-&nbsp; by @soybeanjs [<samp>(472f9)</samp>](https://github.com/honghuangdc/soybean-admin/commit/472f93b)
   - 全局搜索菜单及消息通知适配移动端 &nbsp;-&nbsp; by @yanbowe [<samp>(97e2f)</samp>](https://github.com/honghuangdc/soybean-admin/commit/97e2ffd)
   - support constant route without login status[支持未登录状态下访问自定义的固定路由] &nbsp;-&nbsp; by @soybeanjs [<samp>(a5391)</samp>](https://github.com/honghuangdc/soybean-admin/commit/a539112)
-  - add pinia setup syntax example: setup-store[添加setup syntax的pinia示例setup-store] &nbsp;-&nbsp; by @soybeanjs [<samp>(82c4b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/82c4b09)
+  - add pinia setup syntax example: setup-store[添加 setup syntax 的 pinia 示例 setup-store] &nbsp;-&nbsp; by @soybeanjs [<samp>(82c4b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/82c4b09)
   - add constant route page without login status[添加未登录可访问的固定路由示例页面] &nbsp;-&nbsp; by @soybeanjs [<samp>(78efd)</samp>](https://github.com/honghuangdc/soybean-admin/commit/78efd77)
   - refactor icon system, unify icon usage [重构图标系统，统一图标用法] &nbsp;-&nbsp; by @soybeanjs [<samp>(811f8)</samp>](https://github.com/honghuangdc/soybean-admin/commit/811f820)
-  - import i18n [引入i18n] &nbsp;-&nbsp; by @soybeanjs [<samp>(b632b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b632b7f)
+  - import i18n [引入 i18n] &nbsp;-&nbsp; by @soybeanjs [<samp>(b632b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b632b7f)
   - new router system [新的路由系统] &nbsp;-&nbsp; by @soybeanjs [<samp>(c7b6a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c7b6a3f)
 - **tabs**:
   - 多页签增加关闭所有 &nbsp;-&nbsp; by @yanbowe [<samp>(8237a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/8237adb)
@@ -407,39 +406,39 @@
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
 - **deps**:
-  - decrease @types/node version to fix TS type error [降低@types/node版本修复TS的类型错误] &nbsp;-&nbsp; by @soybeanjs [<samp>(149d2)</samp>](https://github.com/honghuangdc/soybean-admin/commit/149d22a)
+  - decrease @types/node version to fix TS type error [降低@types/node 版本修复 TS 的类型错误] &nbsp;-&nbsp; by @soybeanjs [<samp>(149d2)</samp>](https://github.com/honghuangdc/soybean-admin/commit/149d22a)
 - **projects**:
-  - 修复tab不显示路由首页的问题 &nbsp;-&nbsp; by @soybeanjs [<samp>(a792b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/a792bb5)
+  - 修复 tab 不显示路由首页的问题 &nbsp;-&nbsp; by @soybeanjs [<samp>(a792b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/a792bb5)
   - 修复多个后端服务时的本地代理 &nbsp;-&nbsp; by @soybeanjs [<samp>(2aba5)</samp>](https://github.com/honghuangdc/soybean-admin/commit/2aba58c)
-  - 修复图标的TS类型 &nbsp;-&nbsp; by @soybeanjs [<samp>(dbd67)</samp>](https://github.com/honghuangdc/soybean-admin/commit/dbd6760)
-  - 修复import.meta.env的TS类型 &nbsp;-&nbsp; by @soybeanjs [<samp>(19942)</samp>](https://github.com/honghuangdc/soybean-admin/commit/1994262)
-  - 修复构建后mockjs对xhr的影响问题 &nbsp;-&nbsp; by @soybeanjs [<samp>(77572)</samp>](https://github.com/honghuangdc/soybean-admin/commit/7757285)
-  - 修复TS类型问题 &nbsp;-&nbsp; by @soybeanjs [<samp>(16dce)</samp>](https://github.com/honghuangdc/soybean-admin/commit/16dce9a)
-  - 修复eslint规则 &nbsp;-&nbsp; by @soybeanjs [<samp>(d7f5b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/d7f5bf3)
+  - 修复图标的 TS 类型 &nbsp;-&nbsp; by @soybeanjs [<samp>(dbd67)</samp>](https://github.com/honghuangdc/soybean-admin/commit/dbd6760)
+  - 修复 import.meta.env 的 TS 类型 &nbsp;-&nbsp; by @soybeanjs [<samp>(19942)</samp>](https://github.com/honghuangdc/soybean-admin/commit/1994262)
+  - 修复构建后 mockjs 对 xhr 的影响问题 &nbsp;-&nbsp; by @soybeanjs [<samp>(77572)</samp>](https://github.com/honghuangdc/soybean-admin/commit/7757285)
+  - 修复 TS 类型问题 &nbsp;-&nbsp; by @soybeanjs [<samp>(16dce)</samp>](https://github.com/honghuangdc/soybean-admin/commit/16dce9a)
+  - 修复 eslint 规则 &nbsp;-&nbsp; by @soybeanjs [<samp>(d7f5b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/d7f5bf3)
   - add iconify json &nbsp;-&nbsp; by @soybeanjs [<samp>(8a1ec)</samp>](https://github.com/honghuangdc/soybean-admin/commit/8a1ec93)
 - **svg-icon**:
-  - 自定义图标在Dropdown组件下hover状态无法显示图标 &nbsp;-&nbsp; by @yanbowe [<samp>(0523f)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0523f08)
+  - 自定义图标在 Dropdown 组件下 hover 状态无法显示图标 &nbsp;-&nbsp; by @yanbowe [<samp>(0523f)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0523f08)
 - **utils**:
-  - 修复iconifyRender &nbsp;-&nbsp; by @soybeanjs [<samp>(c37d0)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c37d0ac)
+  - 修复 iconifyRender &nbsp;-&nbsp; by @soybeanjs [<samp>(c37d0)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c37d0ac)
 
 ### &nbsp;&nbsp;&nbsp;🔥 Performance
 
 - **components**:
   - 添加更多主题颜色设置模态窗的层级 &nbsp;-&nbsp; by @xiaotao2018 [<samp>(ee7eb)</samp>](https://github.com/honghuangdc/soybean-admin/commit/ee7eb3a)
-  - 添加更多主题颜色设置模态窗的层级，z-index为int &nbsp;-&nbsp; by @xiaotao2018 [<samp>(e2d65)</samp>](https://github.com/honghuangdc/soybean-admin/commit/e2d6554)
+  - 添加更多主题颜色设置模态窗的层级，z-index 为 int &nbsp;-&nbsp; by @xiaotao2018 [<samp>(e2d65)</samp>](https://github.com/honghuangdc/soybean-admin/commit/e2d6554)
 
 ### &nbsp;&nbsp;&nbsp;💅 Refactors
 
 - **projects**:
   - 代码优化 &nbsp;-&nbsp; by @yanbowe [<samp>(41147)</samp>](https://github.com/honghuangdc/soybean-admin/commit/41147b3)
-  - 添加subscribeAppStore &nbsp;-&nbsp; by @soybeanjs [<samp>(aa2f7)</samp>](https://github.com/honghuangdc/soybean-admin/commit/aa2f78a)
+  - 添加 subscribeAppStore &nbsp;-&nbsp; by @soybeanjs [<samp>(aa2f7)</samp>](https://github.com/honghuangdc/soybean-admin/commit/aa2f78a)
   - 代码优化 &nbsp;-&nbsp; by @soybeanjs [<samp>(b60db)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b60db89)
   - 代码优化 &nbsp;-&nbsp; by @soybeanjs [<samp>(61436)</samp>](https://github.com/honghuangdc/soybean-admin/commit/6143605)
   - 请求适配器函数范型重构、优化请求相关的命名 &nbsp;-&nbsp; by @soybeanjs [<samp>(7f9c9)</samp>](https://github.com/honghuangdc/soybean-admin/commit/7f9c98a)
   - 更新搜索弹窗的图标 &nbsp;-&nbsp; by @soybeanjs [<samp>(ed9cd)</samp>](https://github.com/honghuangdc/soybean-admin/commit/ed9cd6c)
   - 抽离格式化相关依赖配置 &nbsp;-&nbsp; by @soybeanjs [<samp>(f4d37)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f4d37cf)
   - 代码优化 &nbsp;-&nbsp; by @soybeanjs [<samp>(49f95)</samp>](https://github.com/honghuangdc/soybean-admin/commit/49f95c4)
-  - cancel autoinstall @iconify-json [取消@iconify-json自动安装] &nbsp;-&nbsp; by @soybeanjs [<samp>(c29b8)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c29b887)
+  - cancel autoinstall @iconify-json [取消@iconify-json 自动安装] &nbsp;-&nbsp; by @soybeanjs [<samp>(c29b8)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c29b887)
   - refactor page: user-management [重构用户管理页面] &nbsp;-&nbsp; by @soybeanjs [<samp>(468b4)</samp>](https://github.com/honghuangdc/soybean-admin/commit/468b4bb)
 
 ### &nbsp;&nbsp;&nbsp;📖 Documentation
@@ -475,10 +474,10 @@
   - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(3e0cc)</samp>](https://github.com/honghuangdc/soybean-admin/commit/3e0cc8c)
   - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(21b6f)</samp>](https://github.com/honghuangdc/soybean-admin/commit/21b6fb6)
   - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(d823e)</samp>](https://github.com/honghuangdc/soybean-admin/commit/d823ee5)
-  - unplugin-vue-define-options替换为unplugin-vue-macros &nbsp;-&nbsp; by @soybeanjs [<samp>(22c90)</samp>](https://github.com/honghuangdc/soybean-admin/commit/22c9025)
+  - unplugin-vue-define-options 替换为 unplugin-vue-macros &nbsp;-&nbsp; by @soybeanjs [<samp>(22c90)</samp>](https://github.com/honghuangdc/soybean-admin/commit/22c9025)
   - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(7dd7c)</samp>](https://github.com/honghuangdc/soybean-admin/commit/7dd7c71)
   - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(fe8ca)</samp>](https://github.com/honghuangdc/soybean-admin/commit/fe8cab3)
-  - unplugin-icon autoinstall @iconify-json [unplugin-icon自动安装@iconify-json] &nbsp;-&nbsp; by @soybeanjs [<samp>(c045e)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c045e3f)
+  - unplugin-icon autoinstall @iconify-json [unplugin-icon 自动安装@iconify-json] &nbsp;-&nbsp; by @soybeanjs [<samp>(c045e)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c045e3f)
   - update deps [升级依赖] &nbsp;-&nbsp; by @soybeanjs [<samp>(331b1)</samp>](https://github.com/honghuangdc/soybean-admin/commit/331b14e)
   - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(88e53)</samp>](https://github.com/honghuangdc/soybean-admin/commit/88e535f)
   - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(89985)</samp>](https://github.com/honghuangdc/soybean-admin/commit/8998581)
@@ -495,23 +494,23 @@
   - update vscode settings &nbsp;-&nbsp; by @soybeanjs [<samp>(3fe4e)</samp>](https://github.com/honghuangdc/soybean-admin/commit/3fe4e92)
   - 添加.gitattributes &nbsp;-&nbsp; by @soybeanjs [<samp>(896e6)</samp>](https://github.com/honghuangdc/soybean-admin/commit/896e6f2)
   - 代码优化 &nbsp;-&nbsp; by @soybeanjs [<samp>(6a9a3)</samp>](https://github.com/honghuangdc/soybean-admin/commit/6a9a362)
-  - 升级依赖，添加对json的eslint检测及格式化 &nbsp;-&nbsp; by @soybeanjs [<samp>(711a4)</samp>](https://github.com/honghuangdc/soybean-admin/commit/711a4ae)
+  - 升级依赖，添加对 json 的 eslint 检测及格式化 &nbsp;-&nbsp; by @soybeanjs [<samp>(711a4)</samp>](https://github.com/honghuangdc/soybean-admin/commit/711a4ae)
   - update deps and README.md &nbsp;-&nbsp; by @soybeanjs [<samp>(35aee)</samp>](https://github.com/honghuangdc/soybean-admin/commit/35aeedf)
-  - 升级依赖、vite配置optimizeDeps &nbsp;-&nbsp; by @soybeanjs [<samp>(ee434)</samp>](https://github.com/honghuangdc/soybean-admin/commit/ee434b4)
-  - 去除prettier，已集成进@soybeanjs/eslint-config &nbsp;-&nbsp; by @soybeanjs [<samp>(182da)</samp>](https://github.com/honghuangdc/soybean-admin/commit/182dac0)
+  - 升级依赖、vite 配置 optimizeDeps &nbsp;-&nbsp; by @soybeanjs [<samp>(ee434)</samp>](https://github.com/honghuangdc/soybean-admin/commit/ee434b4)
+  - 去除 prettier，已集成进@soybeanjs/eslint-config &nbsp;-&nbsp; by @soybeanjs [<samp>(182da)</samp>](https://github.com/honghuangdc/soybean-admin/commit/182dac0)
   - update eslint &nbsp;-&nbsp; by @soybeanjs [<samp>(907cf)</samp>](https://github.com/honghuangdc/soybean-admin/commit/907cf44)
-  - 引入pwa插件，更新配置 &nbsp;-&nbsp; by @soybeanjs [<samp>(695ec)</samp>](https://github.com/honghuangdc/soybean-admin/commit/695ec7e)
+  - 引入 pwa 插件，更新配置 &nbsp;-&nbsp; by @soybeanjs [<samp>(695ec)</samp>](https://github.com/honghuangdc/soybean-admin/commit/695ec7e)
   - 更新依赖、调整页面 &nbsp;-&nbsp; by @soybeanjs [<samp>(40ecc)</samp>](https://github.com/honghuangdc/soybean-admin/commit/40ecc32)
-  - 引入vite-plugin-progress &nbsp;-&nbsp; by @soybeanjs [<samp>(44ab0)</samp>](https://github.com/honghuangdc/soybean-admin/commit/44ab077)
-  - 升级依赖、修复T标签右键菜单连续显示问题 &nbsp;-&nbsp; by @soybeanjs [<samp>(639c4)</samp>](https://github.com/honghuangdc/soybean-admin/commit/639c445)
-  - 引入TS高级类型库 &nbsp;-&nbsp; by @soybeanjs [<samp>(71a75)</samp>](https://github.com/honghuangdc/soybean-admin/commit/71a753f)
-  - 更换eslint依赖为eslint-config-soybeanjs-vue &nbsp;-&nbsp; by @soybeanjs [<samp>(07325)</samp>](https://github.com/honghuangdc/soybean-admin/commit/07325a4)
-  - 升级依赖，降低naive-ui版本修复打包问题 &nbsp;-&nbsp; by @soybeanjs [<samp>(f408e)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f408ea0)
-  - 升级依赖，修复TS类型 &nbsp;-&nbsp; by @soybeanjs [<samp>(73ce5)</samp>](https://github.com/honghuangdc/soybean-admin/commit/73ce53a)
-  - 引入@unocss/vite替换unocss，精简体积 &nbsp;-&nbsp; by @soybeanjs [<samp>(3540b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/3540b75)
+  - 引入 vite-plugin-progress &nbsp;-&nbsp; by @soybeanjs [<samp>(44ab0)</samp>](https://github.com/honghuangdc/soybean-admin/commit/44ab077)
+  - 升级依赖、修复 T 标签右键菜单连续显示问题 &nbsp;-&nbsp; by @soybeanjs [<samp>(639c4)</samp>](https://github.com/honghuangdc/soybean-admin/commit/639c445)
+  - 引入 TS 高级类型库 &nbsp;-&nbsp; by @soybeanjs [<samp>(71a75)</samp>](https://github.com/honghuangdc/soybean-admin/commit/71a753f)
+  - 更换 eslint 依赖为 eslint-config-soybeanjs-vue &nbsp;-&nbsp; by @soybeanjs [<samp>(07325)</samp>](https://github.com/honghuangdc/soybean-admin/commit/07325a4)
+  - 升级依赖，降低 naive-ui 版本修复打包问题 &nbsp;-&nbsp; by @soybeanjs [<samp>(f408e)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f408ea0)
+  - 升级依赖，修复 TS 类型 &nbsp;-&nbsp; by @soybeanjs [<samp>(73ce5)</samp>](https://github.com/honghuangdc/soybean-admin/commit/73ce53a)
+  - 引入@unocss/vite 替换 unocss，精简体积 &nbsp;-&nbsp; by @soybeanjs [<samp>(3540b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/3540b75)
   - update deps, update logos &nbsp;-&nbsp; by @soybeanjs [<samp>(22c05)</samp>](https://github.com/honghuangdc/soybean-admin/commit/22c0567)
   - add constant page content &nbsp;-&nbsp; by @soybeanjs [<samp>(13d0c)</samp>](https://github.com/honghuangdc/soybean-admin/commit/13d0c41)
-  - add tauri scripts, change tauri icon, fix mockjs [添加tauri相关的命令，变更tauri图标，修复mockjs] &nbsp;-&nbsp; by @soybeanjs [<samp>(1b45b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/1b45b71)
+  - add tauri scripts, change tauri icon, fix mockjs [添加 tauri 相关的命令，变更 tauri 图标，修复 mockjs] &nbsp;-&nbsp; by @soybeanjs [<samp>(1b45b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/1b45b71)
   - use @soybeanjs/cli replace commitizen &nbsp;-&nbsp; by @soybeanjs [<samp>(428d4)</samp>](https://github.com/honghuangdc/soybean-admin/commit/428d41b)
   - use pnpm patch replace @milahu/patch-package &nbsp;-&nbsp; by @soybeanjs [<samp>(9455a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/9455ad9)
   - remove useless file: commitlint.config.js &nbsp;-&nbsp; by @soybeanjs [<samp>(67736)</samp>](https://github.com/honghuangdc/soybean-admin/commit/6773659)
@@ -526,7 +525,7 @@
   - release v0.9.7 &nbsp;-&nbsp; by @soybeanjs [<samp>(cc00c)</samp>](https://github.com/honghuangdc/soybean-admin/commit/cc00c8f)
 - **projects**:
   - 更新.cz-config &nbsp;-&nbsp; by @soybeanjs [<samp>(b18c4)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b18c49e)
-  - 更新eslint配置 &nbsp;-&nbsp; by @soybeanjs [<samp>(872bb)</samp>](https://github.com/honghuangdc/soybean-admin/commit/872bb84)
+  - 更新 eslint 配置 &nbsp;-&nbsp; by @soybeanjs [<samp>(872bb)</samp>](https://github.com/honghuangdc/soybean-admin/commit/872bb84)
 
 ### &nbsp;&nbsp;&nbsp;🤖 CI
 
@@ -542,16 +541,16 @@
 ### &nbsp;&nbsp;&nbsp;🚀 Features
 
 - **projects**:
-  - 新增Antv G2图表示例 &nbsp;-&nbsp; by @soybeanjs [<samp>(2d64a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/2d64a2e)
+  - 新增 Antv G2 图表示例 &nbsp;-&nbsp; by @soybeanjs [<samp>(2d64a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/2d64a2e)
   - 上下结构，菜单支持横向滚动 &nbsp;-&nbsp; by @suiyingsky [<samp>(80805)</samp>](https://github.com/honghuangdc/soybean-admin/commit/808051b)
-  - 增加设置当前Tab页签名称功能 &nbsp;-&nbsp; by @yanbowe [<samp>(48721)</samp>](https://github.com/honghuangdc/soybean-admin/commit/487213b)
-  - 本地svg动态渲染图标 &nbsp;-&nbsp; by @soybeanjs [<samp>(c3c97)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c3c975e)
+  - 增加设置当前 Tab 页签名称功能 &nbsp;-&nbsp; by @yanbowe [<samp>(48721)</samp>](https://github.com/honghuangdc/soybean-admin/commit/487213b)
+  - 本地 svg 动态渲染图标 &nbsp;-&nbsp; by @soybeanjs [<samp>(c3c97)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c3c975e)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
 - **projects**:
   - 修复顶部菜单的位置失效问题 &nbsp;-&nbsp; by @honghuangdc [<samp>(4ee0d)</samp>](https://github.com/honghuangdc/soybean-admin/commit/4ee0d94)
-  - 设置tab标题导致meta属性丢失 &nbsp;-&nbsp; by @yanbowe [<samp>(efcfa)</samp>](https://github.com/honghuangdc/soybean-admin/commit/efcfa57)
+  - 设置 tab 标题导致 meta 属性丢失 &nbsp;-&nbsp; by @yanbowe [<samp>(efcfa)</samp>](https://github.com/honghuangdc/soybean-admin/commit/efcfa57)
 
 ### &nbsp;&nbsp;&nbsp;💅 Refactors
 
@@ -586,15 +585,15 @@
 
 - **projects**:
   - 添加自动跟随系统主题设置 &nbsp;-&nbsp; by @toolvcn [<samp>(ba07b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/ba07b69)
-  - 引入echarts替换antvG2plot &nbsp;-&nbsp; by @soybeanjs [<samp>(e7ad0)</samp>](https://github.com/honghuangdc/soybean-admin/commit/e7ad086)
+  - 引入 echarts 替换 antvG2plot &nbsp;-&nbsp; by @soybeanjs [<samp>(e7ad0)</samp>](https://github.com/honghuangdc/soybean-admin/commit/e7ad086)
   - 添加百度地图、升级依赖 &nbsp;-&nbsp; by @soybeanjs [<samp>(39854)</samp>](https://github.com/honghuangdc/soybean-admin/commit/39854a4)
   - 添加插件页面：图表 &nbsp;-&nbsp; by @soybeanjs [<samp>(0a46e)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0a46ea0)
-  - 添加antv g2图表示例 &nbsp;-&nbsp; by @soybeanjs [<samp>(44b02)</samp>](https://github.com/honghuangdc/soybean-admin/commit/44b022a)
-  - 补充更多的ECharts示例 &nbsp;-&nbsp; by @soybeanjs [<samp>(c7762)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c776249)
+  - 添加 antv g2 图表示例 &nbsp;-&nbsp; by @soybeanjs [<samp>(44b02)</samp>](https://github.com/honghuangdc/soybean-admin/commit/44b022a)
+  - 补充更多的 ECharts 示例 &nbsp;-&nbsp; by @soybeanjs [<samp>(c7762)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c776249)
   - 动态路由根路由重定向只需取决于后端返回的路由首页 &nbsp;-&nbsp; by @soybeanjs [<samp>(434ab)</samp>](https://github.com/honghuangdc/soybean-admin/commit/434ab1c)
-  - 支持同一路由根据不同query和hash同时显示不同Tab &nbsp;-&nbsp; by @soybeanjs [<samp>(41226)</samp>](https://github.com/honghuangdc/soybean-admin/commit/4122685)
+  - 支持同一路由根据不同 query 和 hash 同时显示不同 Tab &nbsp;-&nbsp; by @soybeanjs [<samp>(41226)</samp>](https://github.com/honghuangdc/soybean-admin/commit/4122685)
 - **route**:
-  - 路由meta新增activeMenu属性 &nbsp;-&nbsp; by @yanbowe [<samp>(ebd16)</samp>](https://github.com/honghuangdc/soybean-admin/commit/ebd16a4)
+  - 路由 meta 新增 activeMenu 属性 &nbsp;-&nbsp; by @yanbowe [<samp>(ebd16)</samp>](https://github.com/honghuangdc/soybean-admin/commit/ebd16a4)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -602,9 +601,9 @@
   - 修复插件不存在的错误提示 &nbsp;-&nbsp; by @ThinkDevelop [<samp>(71652)</samp>](https://github.com/honghuangdc/soybean-admin/commit/7165282)
   - 修复权限切换路由数据未更新的问题 &nbsp;-&nbsp; by @soybeanjs [<samp>(60f91)</samp>](https://github.com/honghuangdc/soybean-admin/commit/60f9125)
   - 修复页面切换时导致的溢出滚动条 &nbsp;-&nbsp; by @soybeanjs [<samp>(e0233)</samp>](https://github.com/honghuangdc/soybean-admin/commit/e023306)
-  - 修复@antv/g2生产环境报错 &nbsp;-&nbsp; by @soybeanjs [<samp>(4558c)</samp>](https://github.com/honghuangdc/soybean-admin/commit/4558c24)
+  - 修复@antv/g2 生产环境报错 &nbsp;-&nbsp; by @soybeanjs [<samp>(4558c)</samp>](https://github.com/honghuangdc/soybean-admin/commit/4558c24)
 - **route**:
-  - 当为左侧混合菜单时activeMenu无效情况 &nbsp;-&nbsp; by @yanbowe [<samp>(3e4f9)</samp>](https://github.com/honghuangdc/soybean-admin/commit/3e4f9e2)
+  - 当为左侧混合菜单时 activeMenu 无效情况 &nbsp;-&nbsp; by @yanbowe [<samp>(3e4f9)</samp>](https://github.com/honghuangdc/soybean-admin/commit/3e4f9e2)
 
 ### &nbsp;&nbsp;&nbsp;💅 Refactors
 
@@ -662,7 +661,7 @@
 
 ### &nbsp;&nbsp;&nbsp;🎨 Styles
 
-- **GlobalBreadcrumb**: 代码格式fix &nbsp;-&nbsp; by @tclyjy [<samp>(0243b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0243b27)
+- **GlobalBreadcrumb**: 代码格式 fix &nbsp;-&nbsp; by @tclyjy [<samp>(0243b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0243b27)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
@@ -676,25 +675,25 @@
 - **layouts**:
   - 添加侧边栏/头部的反转模式来增加对比度 &nbsp;-&nbsp; by **元家怿** [<samp>(861c8)</samp>](https://github.com/honghuangdc/soybean-admin/commit/861c8b9)
 - **projects**:
-  - 引入unocss替换windicss &nbsp;-&nbsp; by @honghuangdc [<samp>(c9d3e)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c9d3e5a)
+  - 引入 unocss 替换 windicss &nbsp;-&nbsp; by @honghuangdc [<samp>(c9d3e)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c9d3e5a)
   - HTML lang 修改为 zh-cmn-Hans &nbsp;-&nbsp; by @toolvcn [<samp>(b9c5c)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b9c5c34)
   - 权限完善及权限示例页面 &nbsp;-&nbsp; by @soybeanjs [<samp>(80744)</samp>](https://github.com/honghuangdc/soybean-admin/commit/807448a)
-  - mock添加权限过滤 &nbsp;-&nbsp; by @soybeanjs [<samp>(7f435)</samp>](https://github.com/honghuangdc/soybean-admin/commit/7f4350a)
+  - mock 添加权限过滤 &nbsp;-&nbsp; by @soybeanjs [<samp>(7f435)</samp>](https://github.com/honghuangdc/soybean-admin/commit/7f4350a)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
 - **projects**:
-  - 添加.npmrc修复无法获取自动引入的全局组件声明类型 &nbsp;-&nbsp; by @honghuangdc [<samp>(e8488)</samp>](https://github.com/honghuangdc/soybean-admin/commit/e8488e4)
+  - 添加.npmrc 修复无法获取自动引入的全局组件声明类型 &nbsp;-&nbsp; by @honghuangdc [<samp>(e8488)</samp>](https://github.com/honghuangdc/soybean-admin/commit/e8488e4)
   - 修复样式 &nbsp;-&nbsp; by @honghuangdc [<samp>(e8999)</samp>](https://github.com/honghuangdc/soybean-admin/commit/e899914)
 
 ### &nbsp;&nbsp;&nbsp;💅 Refactors
 
 - **projects**:
-  - mock权限相关数据优化 &nbsp;-&nbsp; by @soybeanjs [<samp>(41e46)</samp>](https://github.com/honghuangdc/soybean-admin/commit/41e46a5)
+  - mock 权限相关数据优化 &nbsp;-&nbsp; by @soybeanjs [<samp>(41e46)</samp>](https://github.com/honghuangdc/soybean-admin/commit/41e46a5)
   - 代码优化 &nbsp;-&nbsp; by @soybeanjs [<samp>(251b5)</samp>](https://github.com/honghuangdc/soybean-admin/commit/251b5b9)
   - 代码优化 &nbsp;-&nbsp; by @honghuangdc [<samp>(a7824)</samp>](https://github.com/honghuangdc/soybean-admin/commit/a782461)
   - 细节优化 &nbsp;-&nbsp; by @soybeanjs [<samp>(c275f)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c275f26)
-  - layout和tab组件依赖名称变更、样式修复 &nbsp;-&nbsp; by @soybeanjs [<samp>(de5fb)</samp>](https://github.com/honghuangdc/soybean-admin/commit/de5fb84)
+  - layout 和 tab 组件依赖名称变更、样式修复 &nbsp;-&nbsp; by @soybeanjs [<samp>(de5fb)</samp>](https://github.com/honghuangdc/soybean-admin/commit/de5fb84)
   - merge branch unocss to main &nbsp;-&nbsp; by @soybeanjs [<samp>(69d51)</samp>](https://github.com/honghuangdc/soybean-admin/commit/69d5131)
   - 动态路由权限完善 &nbsp;-&nbsp; by @soybeanjs [<samp>(55ddc)</samp>](https://github.com/honghuangdc/soybean-admin/commit/55ddc9c)
 
@@ -724,7 +723,7 @@
   - 添加侧边栏/头部的反转模式来增加对比度 &nbsp;-&nbsp; by **元家怿** [<samp>(3c8dd)</samp>](https://github.com/honghuangdc/soybean-admin/commit/3c8dd77)
 - **projects**:
   - 新增静态路由 &nbsp;-&nbsp; by @soybeanjs [<samp>(ca2df)</samp>](https://github.com/honghuangdc/soybean-admin/commit/ca2dfa6)
-  - 插件方式按需引入naiveUI &nbsp;-&nbsp; by @soybeanjs [<samp>(6bed9)</samp>](https://github.com/honghuangdc/soybean-admin/commit/6bed9ea)
+  - 插件方式按需引入 naiveUI &nbsp;-&nbsp; by @soybeanjs [<samp>(6bed9)</samp>](https://github.com/honghuangdc/soybean-admin/commit/6bed9ea)
   - 添加请求适配器的请求示例 &nbsp;-&nbsp; by @soybeanjs [<samp>(bed42)</samp>](https://github.com/honghuangdc/soybean-admin/commit/bed4292)
   - 登录页面适配移动端 &nbsp;-&nbsp; by @soybeanjs [<samp>(ec077)</samp>](https://github.com/honghuangdc/soybean-admin/commit/ec0776e)
   - 登录页背景图片位置适配移动端 &nbsp;-&nbsp; by @soybeanjs [<samp>(24010)</samp>](https://github.com/honghuangdc/soybean-admin/commit/24010d0)
@@ -733,24 +732,24 @@
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
 - **projects**:
-  - 修复vite alias &nbsp;-&nbsp; by @soybeanjs [<samp>(cd7ca)</samp>](https://github.com/honghuangdc/soybean-admin/commit/cd7ca8f)
+  - 修复 vite alias &nbsp;-&nbsp; by @soybeanjs [<samp>(cd7ca)</samp>](https://github.com/honghuangdc/soybean-admin/commit/cd7ca8f)
   - 修复路由守卫的动态路由逻辑 &nbsp;-&nbsp; by @soybeanjs [<samp>(e6c26)</samp>](https://github.com/honghuangdc/soybean-admin/commit/e6c26fc)
   - 全局搜索弹窗弹出时动画闪屏问题 &nbsp;-&nbsp; by @yanbowe [<samp>(bb1bb)</samp>](https://github.com/honghuangdc/soybean-admin/commit/bb1bbf2)
   - 去除从环境文件引入端口号导致的错误 &nbsp;-&nbsp; by @soybeanjs [<samp>(2d6d1)</samp>](https://github.com/honghuangdc/soybean-admin/commit/2d6d179)
-  - 修复在新版vite下环境变量获取不到的问题 &nbsp;-&nbsp; by @soybeanjs [<samp>(3fb13)</samp>](https://github.com/honghuangdc/soybean-admin/commit/3fb13ca)
-  - 修复获取vite环境变量的方式 &nbsp;-&nbsp; by @soybeanjs [<samp>(46e1a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/46e1ae7)
+  - 修复在新版 vite 下环境变量获取不到的问题 &nbsp;-&nbsp; by @soybeanjs [<samp>(3fb13)</samp>](https://github.com/honghuangdc/soybean-admin/commit/3fb13ca)
+  - 修复获取 vite 环境变量的方式 &nbsp;-&nbsp; by @soybeanjs [<samp>(46e1a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/46e1ae7)
   - 添加获取路由组件文件未找到时的错误提示 &nbsp;-&nbsp; by @honghuangdc [<samp>(219f8)</samp>](https://github.com/honghuangdc/soybean-admin/commit/219f87f)
 
 ### &nbsp;&nbsp;&nbsp;🔥 Performance
 
-- refresh-koken命名 &nbsp;-&nbsp; by @southliu [<samp>(17155)</samp>](https://github.com/honghuangdc/soybean-admin/commit/1715504)
+- refresh-koken 命名 &nbsp;-&nbsp; by @southliu [<samp>(17155)</samp>](https://github.com/honghuangdc/soybean-admin/commit/1715504)
 
 ### &nbsp;&nbsp;&nbsp;💅 Refactors
 
 - **projects**:
-  - lint命令修改 &nbsp;-&nbsp; by @soybeanjs [<samp>(20911)</samp>](https://github.com/honghuangdc/soybean-admin/commit/20911dd)
+  - lint 命令修改 &nbsp;-&nbsp; by @soybeanjs [<samp>(20911)</samp>](https://github.com/honghuangdc/soybean-admin/commit/20911dd)
   - 代码优化 &nbsp;-&nbsp; by @soybeanjs [<samp>(e8b53)</samp>](https://github.com/honghuangdc/soybean-admin/commit/e8b534b)
-  - 去除在pinia的getters的函数调用副作用，用watch代替 &nbsp;-&nbsp; by @soybeanjs [<samp>(b35ed)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b35ed89)
+  - 去除在 pinia 的 getters 的函数调用副作用，用 watch 代替 &nbsp;-&nbsp; by @soybeanjs [<samp>(b35ed)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b35ed89)
   - 代码优化 &nbsp;-&nbsp; by @honghuangdc [<samp>(5e276)</samp>](https://github.com/honghuangdc/soybean-admin/commit/5e27642)
 
 ### &nbsp;&nbsp;&nbsp;📖 Documentation
@@ -763,7 +762,7 @@
 ### &nbsp;&nbsp;&nbsp;📦 Build
 
 - **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(cecce)</samp>](https://github.com/honghuangdc/soybean-admin/commit/cecce83)
-- **projects**: vite.config代码优化 &nbsp;-&nbsp; by @soybeanjs [<samp>(ca707)</samp>](https://github.com/honghuangdc/soybean-admin/commit/ca707a4)
+- **projects**: vite.config 代码优化 &nbsp;-&nbsp; by @soybeanjs [<samp>(ca707)</samp>](https://github.com/honghuangdc/soybean-admin/commit/ca707a4)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
@@ -783,55 +782,55 @@
 ### &nbsp;&nbsp;&nbsp;🚀 Features
 
 - **components**:
-  - svgIcon,添加type,调整size方案 &nbsp;-&nbsp; by @Lsq128 [<samp>(ce4e0)</samp>](https://github.com/honghuangdc/soybean-admin/commit/ce4e039)
+  - svgIcon,添加 type,调整 size 方案 &nbsp;-&nbsp; by @Lsq128 [<samp>(ce4e0)</samp>](https://github.com/honghuangdc/soybean-admin/commit/ce4e039)
 - **projects**:
   - 路由页面跳转权限完成 &nbsp;-&nbsp; by @soybeanjs [<samp>(0d2a5)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0d2a562)
-  - 集成naiveUI主题配置，将css vars添加至html &nbsp;-&nbsp; by @soybeanjs [<samp>(2c196)</samp>](https://github.com/honghuangdc/soybean-admin/commit/2c19684)
+  - 集成 naiveUI 主题配置，将 css vars 添加至 html &nbsp;-&nbsp; by @soybeanjs [<samp>(2c196)</samp>](https://github.com/honghuangdc/soybean-admin/commit/2c19684)
   - 初始化加载效果：应用主题颜色 &nbsp;-&nbsp; by @honghuangdc [<samp>(035fa)</samp>](https://github.com/honghuangdc/soybean-admin/commit/035fa11)
   - 登录页面开始迁移 &nbsp;-&nbsp; by @honghuangdc [<samp>(f5a36)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f5a36a0)
   - 迁移登录完成 &nbsp;-&nbsp; by @soybeanjs [<samp>(b93b8)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b93b80c)
-  - 添加NaiveProvider组件 &nbsp;-&nbsp; by @honghuangdc [<samp>(c804b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c804b21)
+  - 添加 NaiveProvider 组件 &nbsp;-&nbsp; by @honghuangdc [<samp>(c804b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c804b21)
   - 多级路由的所有子路由转换成二级路由 &nbsp;-&nbsp; by @honghuangdc [<samp>(85b55)</samp>](https://github.com/honghuangdc/soybean-admin/commit/85b55bb)
-  - 新增BasicLayout布局 &nbsp;-&nbsp; by @soybeanjs [<samp>(00646)</samp>](https://github.com/honghuangdc/soybean-admin/commit/006467a)
-  - 创建自定义布局组件SoybeanLayout &nbsp;-&nbsp; by @honghuangdc [<samp>(0653f)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0653fb1)
+  - 新增 BasicLayout 布局 &nbsp;-&nbsp; by @soybeanjs [<samp>(00646)</samp>](https://github.com/honghuangdc/soybean-admin/commit/006467a)
+  - 创建自定义布局组件 SoybeanLayout &nbsp;-&nbsp; by @honghuangdc [<samp>(0653f)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0653fb1)
   - 添加抽屉 &nbsp;-&nbsp; by @honghuangdc [<samp>(10e4d)</samp>](https://github.com/honghuangdc/soybean-admin/commit/10e4d81)
-  - theme store完成 &nbsp;-&nbsp; by @soybeanjs [<samp>(bf020)</samp>](https://github.com/honghuangdc/soybean-admin/commit/bf020a8)
+  - theme store 完成 &nbsp;-&nbsp; by @soybeanjs [<samp>(bf020)</samp>](https://github.com/honghuangdc/soybean-admin/commit/bf020a8)
   - 主题配置抽屉：迁移暗黑模式、布局模式、添加颜色选择面板 &nbsp;-&nbsp; by @soybeanjs [<samp>(912bf)</samp>](https://github.com/honghuangdc/soybean-admin/commit/912bfdf)
   - 主题配置抽屉: 迁移其他功能 &nbsp;-&nbsp; by @soybeanjs [<samp>(6d132)</samp>](https://github.com/honghuangdc/soybean-admin/commit/6d132c5)
   - 添加头部折叠按钮 &nbsp;-&nbsp; by @honghuangdc [<samp>(a090d)</samp>](https://github.com/honghuangdc/soybean-admin/commit/a090d39)
   - 添加侧边菜单 &nbsp;-&nbsp; by @soybeanjs [<samp>(e25af)</samp>](https://github.com/honghuangdc/soybean-admin/commit/e25afe2)
   - 面包屑 &nbsp;-&nbsp; by @honghuangdc [<samp>(09c76)</samp>](https://github.com/honghuangdc/soybean-admin/commit/09c7658)
-  - 请求拦截器添加刷新token &nbsp;-&nbsp; by @honghuangdc [<samp>(839b8)</samp>](https://github.com/honghuangdc/soybean-admin/commit/839b82b)
+  - 请求拦截器添加刷新 token &nbsp;-&nbsp; by @honghuangdc [<samp>(839b8)</samp>](https://github.com/honghuangdc/soybean-admin/commit/839b82b)
   - 细节完善 &nbsp;-&nbsp; by @soybeanjs [<samp>(cc290)</samp>](https://github.com/honghuangdc/soybean-admin/commit/cc290ac)
   - 迁移多页签 &nbsp;-&nbsp; by @soybeanjs [<samp>(28efb)</samp>](https://github.com/honghuangdc/soybean-admin/commit/28efbdb)
   - 细节完善、迁移页面 &nbsp;-&nbsp; by @soybeanjs [<samp>(ce531)</samp>](https://github.com/honghuangdc/soybean-admin/commit/ce531ce)
-  - 添加页面缓存、记录在tab中的缓存页面的滚动条位置 &nbsp;-&nbsp; by @soybeanjs [<samp>(1d63a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/1d63a83)
+  - 添加页面缓存、记录在 tab 中的缓存页面的滚动条位置 &nbsp;-&nbsp; by @soybeanjs [<samp>(1d63a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/1d63a83)
   - 添加缓存主题色 &nbsp;-&nbsp; by @soybeanjs [<samp>(37092)</samp>](https://github.com/honghuangdc/soybean-admin/commit/3709297)
   - 新版重构完成 &nbsp;-&nbsp; by @soybeanjs [<samp>(68b42)</samp>](https://github.com/honghuangdc/soybean-admin/commit/68b4230)
   - 迁移全局搜索菜单功能 &nbsp;-&nbsp; by @yanbowe [<samp>(554d7)</samp>](https://github.com/honghuangdc/soybean-admin/commit/554d7fd)
-  - 添加naiveUI按需引入 &nbsp;-&nbsp; by @soybeanjs [<samp>(a810e)</samp>](https://github.com/honghuangdc/soybean-admin/commit/a810ef8)
-  - 添加SvgIcon,配置vite plugin &nbsp;-&nbsp; by **Liushengqun** [<samp>(378d5)</samp>](https://github.com/honghuangdc/soybean-admin/commit/378d55a)
-  - 引入soybean-admin-tab、去除vite-plugin-svg-icons，用unplugin-icons实现自定义svg的iconify写法、代码优化 &nbsp;-&nbsp; by @soybeanjs [<samp>(a1a57)</samp>](https://github.com/honghuangdc/soybean-admin/commit/a1a57a1)
+  - 添加 naiveUI 按需引入 &nbsp;-&nbsp; by @soybeanjs [<samp>(a810e)</samp>](https://github.com/honghuangdc/soybean-admin/commit/a810ef8)
+  - 添加 SvgIcon,配置 vite plugin &nbsp;-&nbsp; by **Liushengqun** [<samp>(378d5)</samp>](https://github.com/honghuangdc/soybean-admin/commit/378d55a)
+  - 引入 soybean-admin-tab、去除 vite-plugin-svg-icons，用 unplugin-icons 实现自定义 svg 的 iconify 写法、代码优化 &nbsp;-&nbsp; by @soybeanjs [<samp>(a1a57)</samp>](https://github.com/honghuangdc/soybean-admin/commit/a1a57a1)
   - 新增子菜单图标和多页签图标 &nbsp;-&nbsp; by @soybeanjs [<samp>(f5c56)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f5c56c3)
-  - 重构项目的TS类型架构，去除interface文件夹 &nbsp;-&nbsp; by @soybeanjs [<samp>(81914)</samp>](https://github.com/honghuangdc/soybean-admin/commit/8191490)
+  - 重构项目的 TS 类型架构，去除 interface 文件夹 &nbsp;-&nbsp; by @soybeanjs [<samp>(81914)</samp>](https://github.com/honghuangdc/soybean-admin/commit/8191490)
   - 添加网络代理 &nbsp;-&nbsp; by @soybeanjs [<samp>(094dc)</samp>](https://github.com/honghuangdc/soybean-admin/commit/094dca9)
   - 添加全局组件自动引入注册 &nbsp;-&nbsp; by @soybeanjs [<samp>(f5a04)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f5a043b)
-  - 新增自定义svg图标动态渲染 &nbsp;-&nbsp; by @soybeanjs [<samp>(f83c7)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f83c7b5)
+  - 新增自定义 svg 图标动态渲染 &nbsp;-&nbsp; by @soybeanjs [<samp>(f83c7)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f83c7b5)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
 - **components**:
-  - 修复Tab在移动端设备无法点击的问题 &nbsp;-&nbsp; by @honghuangdc [<samp>(2c966)</samp>](https://github.com/honghuangdc/soybean-admin/commit/2c9660f)
-  - 修复组件LoadingEmptyWrapper适应暗黑模式 &nbsp;-&nbsp; by @soybeanjs [<samp>(811b1)</samp>](https://github.com/honghuangdc/soybean-admin/commit/811b15e)
-  - 组件LoadingEmptyWrapper添加背景颜色动画过渡 &nbsp;-&nbsp; by @soybeanjs [<samp>(7add5)</samp>](https://github.com/honghuangdc/soybean-admin/commit/7add5c2)
+  - 修复 Tab 在移动端设备无法点击的问题 &nbsp;-&nbsp; by @honghuangdc [<samp>(2c966)</samp>](https://github.com/honghuangdc/soybean-admin/commit/2c9660f)
+  - 修复组件 LoadingEmptyWrapper 适应暗黑模式 &nbsp;-&nbsp; by @soybeanjs [<samp>(811b1)</samp>](https://github.com/honghuangdc/soybean-admin/commit/811b15e)
+  - 组件 LoadingEmptyWrapper 添加背景颜色动画过渡 &nbsp;-&nbsp; by @soybeanjs [<samp>(7add5)</samp>](https://github.com/honghuangdc/soybean-admin/commit/7add5c2)
 - **projects**:
-  - 修复redirect-not-found子路由 &nbsp;-&nbsp; by @honghuangdc [<samp>(5bfb8)</samp>](https://github.com/honghuangdc/soybean-admin/commit/5bfb819)
-  - 去除Layout组件冗余代码 &nbsp;-&nbsp; by @honghuangdc [<samp>(0e783)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0e783bc)
+  - 修复 redirect-not-found 子路由 &nbsp;-&nbsp; by @honghuangdc [<samp>(5bfb8)</samp>](https://github.com/honghuangdc/soybean-admin/commit/5bfb819)
+  - 去除 Layout 组件冗余代码 &nbsp;-&nbsp; by @honghuangdc [<samp>(0e783)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0e783bc)
   - 修复面包屑数据 &nbsp;-&nbsp; by @honghuangdc [<samp>(28b5d)</samp>](https://github.com/honghuangdc/soybean-admin/commit/28b5d22)
-  - 修复vertical-mix布局、重构初始化的loading &nbsp;-&nbsp; by @soybeanjs [<samp>(579e0)</samp>](https://github.com/honghuangdc/soybean-admin/commit/579e074)
+  - 修复 vertical-mix 布局、重构初始化的 loading &nbsp;-&nbsp; by @soybeanjs [<samp>(579e0)</samp>](https://github.com/honghuangdc/soybean-admin/commit/579e074)
   - 修复未登录时会调用获取用户路由的接口 &nbsp;-&nbsp; by @soybeanjs [<samp>(21bab)</samp>](https://github.com/honghuangdc/soybean-admin/commit/21bab1f)
   - 修复路由守卫的动态路由逻辑 &nbsp;-&nbsp; by @soybeanjs [<samp>(b61b0)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b61b0ce)
-  - vite配置修复 &nbsp;-&nbsp; by @soybeanjs [<samp>(facc0)</samp>](https://github.com/honghuangdc/soybean-admin/commit/facc00e)
+  - vite 配置修复 &nbsp;-&nbsp; by @soybeanjs [<samp>(facc0)</samp>](https://github.com/honghuangdc/soybean-admin/commit/facc00e)
   - 修复分析页和工作台的布局问题 &nbsp;-&nbsp; by @honghuangdc [<samp>(e93b9)</samp>](https://github.com/honghuangdc/soybean-admin/commit/e93b94c)
   - 修复项目配置拷贝功能 &nbsp;-&nbsp; by @soybeanjs [<samp>(a7a26)</samp>](https://github.com/honghuangdc/soybean-admin/commit/a7a269d)
   - 修复页面切换动画无变化 &nbsp;-&nbsp; by @soybeanjs [<samp>(c4546)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c4546bd)
@@ -841,12 +840,12 @@
 ### &nbsp;&nbsp;&nbsp;💅 Refactors
 
 - **components**:
-  - 去除packages的soybean-layout，通过npm的方式引入 &nbsp;-&nbsp; by @soybeanjs [<samp>(c1182)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c1182fe)
+  - 去除 packages 的 soybean-layout，通过 npm 的方式引入 &nbsp;-&nbsp; by @soybeanjs [<samp>(c1182)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c1182fe)
 - **projects**:
   - 精简版+动态路由权限初步 &nbsp;-&nbsp; by @soybeanjs [<samp>(de205)</samp>](https://github.com/honghuangdc/soybean-admin/commit/de2057f)
   - 单独一级路由相关逻辑重构 &nbsp;-&nbsp; by @honghuangdc [<samp>(ab9a6)</samp>](https://github.com/honghuangdc/soybean-admin/commit/ab9a6a2)
   - 单独路由逻辑重构、路由转换函数优化 &nbsp;-&nbsp; by @soybeanjs [<samp>(b36a6)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b36a62b)
-  - 恢复pinia默认写法 &nbsp;-&nbsp; by @soybeanjs [<samp>(b2a4d)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b2a4ddf)
+  - 恢复 pinia 默认写法 &nbsp;-&nbsp; by @soybeanjs [<samp>(b2a4d)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b2a4ddf)
   - 请求构造函数适配不同后端接口的数据结构 &nbsp;-&nbsp; by @soybeanjs [<samp>(4f9d5)</samp>](https://github.com/honghuangdc/soybean-admin/commit/4f9d544)
   - 细节完善 &nbsp;-&nbsp; by @soybeanjs [<samp>(651e5)</samp>](https://github.com/honghuangdc/soybean-admin/commit/651e58d)
   - 重构路由页面组件的导入 &nbsp;-&nbsp; by @honghuangdc [<samp>(e6503)</samp>](https://github.com/honghuangdc/soybean-admin/commit/e65034d)
@@ -880,10 +879,10 @@
   - upgrade deps &nbsp;-&nbsp; by @soybeanjs [<samp>(8d00b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/8d00b23)
   - upgrade deps &nbsp;-&nbsp; by @soybeanjs [<samp>(b298a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b298af1)
 - **projects**:
-  - 修改vscode配置 &nbsp;-&nbsp; by @honghuangdc [<samp>(0c577)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0c5770d)
-  - 添加vercel打包的环境 &nbsp;-&nbsp; by @honghuangdc [<samp>(371fa)</samp>](https://github.com/honghuangdc/soybean-admin/commit/371fad4)
+  - 修改 vscode 配置 &nbsp;-&nbsp; by @honghuangdc [<samp>(0c577)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0c5770d)
+  - 添加 vercel 打包的环境 &nbsp;-&nbsp; by @honghuangdc [<samp>(371fa)</samp>](https://github.com/honghuangdc/soybean-admin/commit/371fad4)
   - add license &nbsp;-&nbsp; by @soybeanjs [<samp>(b1672)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b16721b)
-  - 更新tsconfig.json &nbsp;-&nbsp; by @soybeanjs [<samp>(f42ee)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f42ee9d)
+  - 更新 tsconfig.json &nbsp;-&nbsp; by @soybeanjs [<samp>(f42ee)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f42ee9d)
   - update tsconfig、eslintrc &nbsp;-&nbsp; by @soybeanjs [<samp>(75de2)</samp>](https://github.com/honghuangdc/soybean-admin/commit/75de2b0)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
@@ -912,26 +911,26 @@
 
 - **projects**:
   - 路由页面跳转权限完成 &nbsp;-&nbsp; by @soybeanjs [<samp>(0d2a5)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0d2a562)
-  - 集成naiveUI主题配置，将css vars添加至html &nbsp;-&nbsp; by @soybeanjs [<samp>(2c196)</samp>](https://github.com/honghuangdc/soybean-admin/commit/2c19684)
+  - 集成 naiveUI 主题配置，将 css vars 添加至 html &nbsp;-&nbsp; by @soybeanjs [<samp>(2c196)</samp>](https://github.com/honghuangdc/soybean-admin/commit/2c19684)
   - 初始化加载效果：应用主题颜色 &nbsp;-&nbsp; by @honghuangdc [<samp>(035fa)</samp>](https://github.com/honghuangdc/soybean-admin/commit/035fa11)
   - 登录页面开始迁移 &nbsp;-&nbsp; by @honghuangdc [<samp>(f5a36)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f5a36a0)
   - 迁移登录完成 &nbsp;-&nbsp; by @soybeanjs [<samp>(b93b8)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b93b80c)
-  - 添加NaiveProvider组件 &nbsp;-&nbsp; by @honghuangdc [<samp>(c804b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c804b21)
+  - 添加 NaiveProvider 组件 &nbsp;-&nbsp; by @honghuangdc [<samp>(c804b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c804b21)
   - 多级路由的所有子路由转换成二级路由 &nbsp;-&nbsp; by @honghuangdc [<samp>(85b55)</samp>](https://github.com/honghuangdc/soybean-admin/commit/85b55bb)
-  - 新增BasicLayout布局 &nbsp;-&nbsp; by @soybeanjs [<samp>(00646)</samp>](https://github.com/honghuangdc/soybean-admin/commit/006467a)
-  - 创建自定义布局组件SoybeanLayout &nbsp;-&nbsp; by @honghuangdc [<samp>(0653f)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0653fb1)
+  - 新增 BasicLayout 布局 &nbsp;-&nbsp; by @soybeanjs [<samp>(00646)</samp>](https://github.com/honghuangdc/soybean-admin/commit/006467a)
+  - 创建自定义布局组件 SoybeanLayout &nbsp;-&nbsp; by @honghuangdc [<samp>(0653f)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0653fb1)
   - 添加抽屉 &nbsp;-&nbsp; by @honghuangdc [<samp>(10e4d)</samp>](https://github.com/honghuangdc/soybean-admin/commit/10e4d81)
-  - theme store完成 &nbsp;-&nbsp; by @soybeanjs [<samp>(bf020)</samp>](https://github.com/honghuangdc/soybean-admin/commit/bf020a8)
+  - theme store 完成 &nbsp;-&nbsp; by @soybeanjs [<samp>(bf020)</samp>](https://github.com/honghuangdc/soybean-admin/commit/bf020a8)
   - 主题配置抽屉：迁移暗黑模式、布局模式、添加颜色选择面板 &nbsp;-&nbsp; by @soybeanjs [<samp>(912bf)</samp>](https://github.com/honghuangdc/soybean-admin/commit/912bfdf)
   - 主题配置抽屉: 迁移其他功能 &nbsp;-&nbsp; by @soybeanjs [<samp>(6d132)</samp>](https://github.com/honghuangdc/soybean-admin/commit/6d132c5)
   - 添加头部折叠按钮 &nbsp;-&nbsp; by @honghuangdc [<samp>(a090d)</samp>](https://github.com/honghuangdc/soybean-admin/commit/a090d39)
   - 添加侧边菜单 &nbsp;-&nbsp; by @soybeanjs [<samp>(e25af)</samp>](https://github.com/honghuangdc/soybean-admin/commit/e25afe2)
   - 面包屑 &nbsp;-&nbsp; by @honghuangdc [<samp>(09c76)</samp>](https://github.com/honghuangdc/soybean-admin/commit/09c7658)
-  - 请求拦截器添加刷新token &nbsp;-&nbsp; by @honghuangdc [<samp>(839b8)</samp>](https://github.com/honghuangdc/soybean-admin/commit/839b82b)
+  - 请求拦截器添加刷新 token &nbsp;-&nbsp; by @honghuangdc [<samp>(839b8)</samp>](https://github.com/honghuangdc/soybean-admin/commit/839b82b)
   - 细节完善 &nbsp;-&nbsp; by @soybeanjs [<samp>(cc290)</samp>](https://github.com/honghuangdc/soybean-admin/commit/cc290ac)
   - 迁移多页签 &nbsp;-&nbsp; by @soybeanjs [<samp>(28efb)</samp>](https://github.com/honghuangdc/soybean-admin/commit/28efbdb)
   - 细节完善、迁移页面 &nbsp;-&nbsp; by @soybeanjs [<samp>(ce531)</samp>](https://github.com/honghuangdc/soybean-admin/commit/ce531ce)
-  - 添加页面缓存、记录在tab中的缓存页面的滚动条位置 &nbsp;-&nbsp; by @soybeanjs [<samp>(1d63a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/1d63a83)
+  - 添加页面缓存、记录在 tab 中的缓存页面的滚动条位置 &nbsp;-&nbsp; by @soybeanjs [<samp>(1d63a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/1d63a83)
   - 添加缓存主题色 &nbsp;-&nbsp; by @soybeanjs [<samp>(37092)</samp>](https://github.com/honghuangdc/soybean-admin/commit/3709297)
   - 新版重构完成 &nbsp;-&nbsp; by @soybeanjs [<samp>(68b42)</samp>](https://github.com/honghuangdc/soybean-admin/commit/68b4230)
   - 迁移全局搜索菜单功能 &nbsp;-&nbsp; by @yanbowe [<samp>(554d7)</samp>](https://github.com/honghuangdc/soybean-admin/commit/554d7fd)
@@ -939,15 +938,15 @@
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
 - **components**:
-  - 修复Tab在移动端设备无法点击的问题 &nbsp;-&nbsp; by @honghuangdc [<samp>(2c966)</samp>](https://github.com/honghuangdc/soybean-admin/commit/2c9660f)
+  - 修复 Tab 在移动端设备无法点击的问题 &nbsp;-&nbsp; by @honghuangdc [<samp>(2c966)</samp>](https://github.com/honghuangdc/soybean-admin/commit/2c9660f)
 - **projects**:
-  - 修复redirect-not-found子路由 &nbsp;-&nbsp; by @honghuangdc [<samp>(5bfb8)</samp>](https://github.com/honghuangdc/soybean-admin/commit/5bfb819)
-  - 去除Layout组件冗余代码 &nbsp;-&nbsp; by @honghuangdc [<samp>(0e783)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0e783bc)
+  - 修复 redirect-not-found 子路由 &nbsp;-&nbsp; by @honghuangdc [<samp>(5bfb8)</samp>](https://github.com/honghuangdc/soybean-admin/commit/5bfb819)
+  - 去除 Layout 组件冗余代码 &nbsp;-&nbsp; by @honghuangdc [<samp>(0e783)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0e783bc)
   - 修复面包屑数据 &nbsp;-&nbsp; by @honghuangdc [<samp>(28b5d)</samp>](https://github.com/honghuangdc/soybean-admin/commit/28b5d22)
-  - 修复vertical-mix布局、重构初始化的loading &nbsp;-&nbsp; by @soybeanjs [<samp>(579e0)</samp>](https://github.com/honghuangdc/soybean-admin/commit/579e074)
+  - 修复 vertical-mix 布局、重构初始化的 loading &nbsp;-&nbsp; by @soybeanjs [<samp>(579e0)</samp>](https://github.com/honghuangdc/soybean-admin/commit/579e074)
   - 修复未登录时会调用获取用户路由的接口 &nbsp;-&nbsp; by @soybeanjs [<samp>(21bab)</samp>](https://github.com/honghuangdc/soybean-admin/commit/21bab1f)
   - 修复路由守卫的动态路由逻辑 &nbsp;-&nbsp; by @soybeanjs [<samp>(b61b0)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b61b0ce)
-  - vite配置修复 &nbsp;-&nbsp; by @soybeanjs [<samp>(facc0)</samp>](https://github.com/honghuangdc/soybean-admin/commit/facc00e)
+  - vite 配置修复 &nbsp;-&nbsp; by @soybeanjs [<samp>(facc0)</samp>](https://github.com/honghuangdc/soybean-admin/commit/facc00e)
   - 修复分析页和工作台的布局问题 &nbsp;-&nbsp; by @honghuangdc [<samp>(e93b9)</samp>](https://github.com/honghuangdc/soybean-admin/commit/e93b94c)
   - 修复项目配置拷贝功能 &nbsp;-&nbsp; by @soybeanjs [<samp>(a7a26)</samp>](https://github.com/honghuangdc/soybean-admin/commit/a7a269d)
 
@@ -957,7 +956,7 @@
   - 精简版+动态路由权限初步 &nbsp;-&nbsp; by @soybeanjs [<samp>(de205)</samp>](https://github.com/honghuangdc/soybean-admin/commit/de2057f)
   - 单独一级路由相关逻辑重构 &nbsp;-&nbsp; by @honghuangdc [<samp>(ab9a6)</samp>](https://github.com/honghuangdc/soybean-admin/commit/ab9a6a2)
   - 单独路由逻辑重构、路由转换函数优化 &nbsp;-&nbsp; by @soybeanjs [<samp>(b36a6)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b36a62b)
-  - 恢复pinia默认写法 &nbsp;-&nbsp; by @soybeanjs [<samp>(b2a4d)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b2a4ddf)
+  - 恢复 pinia 默认写法 &nbsp;-&nbsp; by @soybeanjs [<samp>(b2a4d)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b2a4ddf)
   - 请求构造函数适配不同后端接口的数据结构 &nbsp;-&nbsp; by @soybeanjs [<samp>(4f9d5)</samp>](https://github.com/honghuangdc/soybean-admin/commit/4f9d544)
   - 细节完善 &nbsp;-&nbsp; by @soybeanjs [<samp>(651e5)</samp>](https://github.com/honghuangdc/soybean-admin/commit/651e58d)
   - 重构路由页面组件的导入 &nbsp;-&nbsp; by @honghuangdc [<samp>(e6503)</samp>](https://github.com/honghuangdc/soybean-admin/commit/e65034d)
@@ -974,8 +973,8 @@
 ### &nbsp;&nbsp;&nbsp;📦 Build
 
 - **projects**:
-  - 修改vscode配置 &nbsp;-&nbsp; by @honghuangdc [<samp>(0c577)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0c5770d)
-  - 添加vercel打包的环境 &nbsp;-&nbsp; by @honghuangdc [<samp>(371fa)</samp>](https://github.com/honghuangdc/soybean-admin/commit/371fad4)
+  - 修改 vscode 配置 &nbsp;-&nbsp; by @honghuangdc [<samp>(0c577)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0c5770d)
+  - 添加 vercel 打包的环境 &nbsp;-&nbsp; by @honghuangdc [<samp>(371fa)</samp>](https://github.com/honghuangdc/soybean-admin/commit/371fad4)
   - add license &nbsp;-&nbsp; by @soybeanjs [<samp>(b1672)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b16721b)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
@@ -1004,9 +1003,9 @@
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
 - **components**:
-  - 修复Tab在移动端设备无法点击的问题 &nbsp;-&nbsp; by @honghuangdc [<samp>(2c966)</samp>](https://github.com/honghuangdc/soybean-admin/commit/2c9660f)
+  - 修复 Tab 在移动端设备无法点击的问题 &nbsp;-&nbsp; by @honghuangdc [<samp>(2c966)</samp>](https://github.com/honghuangdc/soybean-admin/commit/2c9660f)
 - **projects**:
-  - vite配置修复 &nbsp;-&nbsp; by @soybeanjs [<samp>(facc0)</samp>](https://github.com/honghuangdc/soybean-admin/commit/facc00e)
+  - vite 配置修复 &nbsp;-&nbsp; by @soybeanjs [<samp>(facc0)</samp>](https://github.com/honghuangdc/soybean-admin/commit/facc00e)
   - 修复分析页和工作台的布局问题 &nbsp;-&nbsp; by @honghuangdc [<samp>(e93b9)</samp>](https://github.com/honghuangdc/soybean-admin/commit/e93b94c)
   - 修复项目配置拷贝功能 &nbsp;-&nbsp; by @soybeanjs [<samp>(a7a26)</samp>](https://github.com/honghuangdc/soybean-admin/commit/a7a269d)
 
@@ -1075,7 +1074,7 @@
 ### &nbsp;&nbsp;&nbsp;🚀 Features
 
 - **projects**:
-  - 添加页面缓存、记录在tab中的缓存页面的滚动条位置 &nbsp;-&nbsp; by @soybeanjs [<samp>(1d63a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/1d63a83)
+  - 添加页面缓存、记录在 tab 中的缓存页面的滚动条位置 &nbsp;-&nbsp; by @soybeanjs [<samp>(1d63a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/1d63a83)
   - 添加缓存主题色 &nbsp;-&nbsp; by @soybeanjs [<samp>(37092)</samp>](https://github.com/honghuangdc/soybean-admin/commit/3709297)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
@@ -1092,32 +1091,32 @@
 
 - **projects**:
   - 添加路由跳转浏览器新标签 &nbsp;-&nbsp; by @honghuangdc [<samp>(987ce)</samp>](https://github.com/honghuangdc/soybean-admin/commit/987cef3)
-  - 添加常用组件、composables函数 &nbsp;-&nbsp; by @soybeanjs [<samp>(230a5)</samp>](https://github.com/honghuangdc/soybean-admin/commit/230a50a)
+  - 添加常用组件、composables 函数 &nbsp;-&nbsp; by @soybeanjs [<samp>(230a5)</samp>](https://github.com/honghuangdc/soybean-admin/commit/230a50a)
   - 添加表格页面示例 &nbsp;-&nbsp; by @soybeanjs [<samp>(51c74)</samp>](https://github.com/honghuangdc/soybean-admin/commit/51c744c)
-  - 增加Icon选择器组件 &nbsp;-&nbsp; by @yanbowe [<samp>(9472b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/9472b51)
+  - 增加 Icon 选择器组件 &nbsp;-&nbsp; by @yanbowe [<samp>(9472b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/9472b51)
   - 图标选择器增加扩展树形 &nbsp;-&nbsp; by @yanbowe [<samp>(04101)</samp>](https://github.com/honghuangdc/soybean-admin/commit/041012b)
   - 增加项目文档外链 &nbsp;-&nbsp; by @yanbowe [<samp>(1901a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/1901a0b)
-  - 引入mockjs &nbsp;-&nbsp; by @soybeanjs [<samp>(9bc68)</samp>](https://github.com/honghuangdc/soybean-admin/commit/9bc682d)
+  - 引入 mockjs &nbsp;-&nbsp; by @soybeanjs [<samp>(9bc68)</samp>](https://github.com/honghuangdc/soybean-admin/commit/9bc682d)
   - 增加全局搜索菜单功能 &nbsp;-&nbsp; by @yanbowe [<samp>(b9ce6)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b9ce691)
   - 菜单搜索增加大小写转换 &nbsp;-&nbsp; by @yanbowe [<samp>(29078)</samp>](https://github.com/honghuangdc/soybean-admin/commit/2907868)
-  - 添加cryptojs，对本地缓存数据进行加密 &nbsp;-&nbsp; by @soybeanjs [<samp>(7a064)</samp>](https://github.com/honghuangdc/soybean-admin/commit/7a0648d)
+  - 添加 cryptojs，对本地缓存数据进行加密 &nbsp;-&nbsp; by @soybeanjs [<samp>(7a064)</samp>](https://github.com/honghuangdc/soybean-admin/commit/7a0648d)
   - 路由页面跳转权限完成 &nbsp;-&nbsp; by @soybeanjs [<samp>(0d2a5)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0d2a562)
-  - 集成naiveUI主题配置，将css vars添加至html &nbsp;-&nbsp; by @soybeanjs [<samp>(2c196)</samp>](https://github.com/honghuangdc/soybean-admin/commit/2c19684)
+  - 集成 naiveUI 主题配置，将 css vars 添加至 html &nbsp;-&nbsp; by @soybeanjs [<samp>(2c196)</samp>](https://github.com/honghuangdc/soybean-admin/commit/2c19684)
   - 初始化加载效果：应用主题颜色 &nbsp;-&nbsp; by @honghuangdc [<samp>(035fa)</samp>](https://github.com/honghuangdc/soybean-admin/commit/035fa11)
   - 登录页面开始迁移 &nbsp;-&nbsp; by @honghuangdc [<samp>(f5a36)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f5a36a0)
   - 迁移登录完成 &nbsp;-&nbsp; by @soybeanjs [<samp>(b93b8)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b93b80c)
-  - 添加NaiveProvider组件 &nbsp;-&nbsp; by @honghuangdc [<samp>(c804b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c804b21)
+  - 添加 NaiveProvider 组件 &nbsp;-&nbsp; by @honghuangdc [<samp>(c804b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c804b21)
   - 多级路由的所有子路由转换成二级路由 &nbsp;-&nbsp; by @honghuangdc [<samp>(85b55)</samp>](https://github.com/honghuangdc/soybean-admin/commit/85b55bb)
-  - 新增BasicLayout布局 &nbsp;-&nbsp; by @soybeanjs [<samp>(00646)</samp>](https://github.com/honghuangdc/soybean-admin/commit/006467a)
-  - 创建自定义布局组件SoybeanLayout &nbsp;-&nbsp; by @honghuangdc [<samp>(0653f)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0653fb1)
+  - 新增 BasicLayout 布局 &nbsp;-&nbsp; by @soybeanjs [<samp>(00646)</samp>](https://github.com/honghuangdc/soybean-admin/commit/006467a)
+  - 创建自定义布局组件 SoybeanLayout &nbsp;-&nbsp; by @honghuangdc [<samp>(0653f)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0653fb1)
   - 添加抽屉 &nbsp;-&nbsp; by @honghuangdc [<samp>(10e4d)</samp>](https://github.com/honghuangdc/soybean-admin/commit/10e4d81)
-  - theme store完成 &nbsp;-&nbsp; by @soybeanjs [<samp>(bf020)</samp>](https://github.com/honghuangdc/soybean-admin/commit/bf020a8)
+  - theme store 完成 &nbsp;-&nbsp; by @soybeanjs [<samp>(bf020)</samp>](https://github.com/honghuangdc/soybean-admin/commit/bf020a8)
   - 主题配置抽屉：迁移暗黑模式、布局模式、添加颜色选择面板 &nbsp;-&nbsp; by @soybeanjs [<samp>(912bf)</samp>](https://github.com/honghuangdc/soybean-admin/commit/912bfdf)
   - 主题配置抽屉: 迁移其他功能 &nbsp;-&nbsp; by @soybeanjs [<samp>(6d132)</samp>](https://github.com/honghuangdc/soybean-admin/commit/6d132c5)
   - 添加头部折叠按钮 &nbsp;-&nbsp; by @honghuangdc [<samp>(a090d)</samp>](https://github.com/honghuangdc/soybean-admin/commit/a090d39)
   - 添加侧边菜单 &nbsp;-&nbsp; by @soybeanjs [<samp>(e25af)</samp>](https://github.com/honghuangdc/soybean-admin/commit/e25afe2)
   - 面包屑 &nbsp;-&nbsp; by @honghuangdc [<samp>(09c76)</samp>](https://github.com/honghuangdc/soybean-admin/commit/09c7658)
-  - 请求拦截器添加刷新token &nbsp;-&nbsp; by @honghuangdc [<samp>(839b8)</samp>](https://github.com/honghuangdc/soybean-admin/commit/839b82b)
+  - 请求拦截器添加刷新 token &nbsp;-&nbsp; by @honghuangdc [<samp>(839b8)</samp>](https://github.com/honghuangdc/soybean-admin/commit/839b82b)
   - 细节完善 &nbsp;-&nbsp; by @soybeanjs [<samp>(cc290)</samp>](https://github.com/honghuangdc/soybean-admin/commit/cc290ac)
   - 迁移多页签 &nbsp;-&nbsp; by @soybeanjs [<samp>(28efb)</samp>](https://github.com/honghuangdc/soybean-admin/commit/28efbdb)
   - 细节完善、迁移页面 &nbsp;-&nbsp; by @soybeanjs [<samp>(ce531)</samp>](https://github.com/honghuangdc/soybean-admin/commit/ce531ce)
@@ -1125,23 +1124,23 @@
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
 - **deps**:
-  - 降低vite版本 &nbsp;-&nbsp; by @honghuangdc [<samp>(c9c5c)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c9c5ca9)
+  - 降低 vite 版本 &nbsp;-&nbsp; by @honghuangdc [<samp>(c9c5c)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c9c5ca9)
 - **projects**:
   - 修复网络请求错误空信息的提示 &nbsp;-&nbsp; by @honghuangdc [<samp>(ff921)</samp>](https://github.com/honghuangdc/soybean-admin/commit/ff9216b)
   - 请求相关细节修复 &nbsp;-&nbsp; by @honghuangdc [<samp>(2ad1a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/2ad1ad3)
-  - 修复redirect-not-found子路由 &nbsp;-&nbsp; by @honghuangdc [<samp>(5bfb8)</samp>](https://github.com/honghuangdc/soybean-admin/commit/5bfb819)
-  - 去除Layout组件冗余代码 &nbsp;-&nbsp; by @honghuangdc [<samp>(0e783)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0e783bc)
+  - 修复 redirect-not-found 子路由 &nbsp;-&nbsp; by @honghuangdc [<samp>(5bfb8)</samp>](https://github.com/honghuangdc/soybean-admin/commit/5bfb819)
+  - 去除 Layout 组件冗余代码 &nbsp;-&nbsp; by @honghuangdc [<samp>(0e783)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0e783bc)
   - 修复面包屑数据 &nbsp;-&nbsp; by @honghuangdc [<samp>(28b5d)</samp>](https://github.com/honghuangdc/soybean-admin/commit/28b5d22)
-  - 修复vertical-mix布局、重构初始化的loading &nbsp;-&nbsp; by @soybeanjs [<samp>(579e0)</samp>](https://github.com/honghuangdc/soybean-admin/commit/579e074)
+  - 修复 vertical-mix 布局、重构初始化的 loading &nbsp;-&nbsp; by @soybeanjs [<samp>(579e0)</samp>](https://github.com/honghuangdc/soybean-admin/commit/579e074)
 
 ### &nbsp;&nbsp;&nbsp;💅 Refactors
 
 - **projects**:
-  - 登录模块由query变更为动态路由params &nbsp;-&nbsp; by @honghuangdc [<samp>(225c4)</samp>](https://github.com/honghuangdc/soybean-admin/commit/225c4fe)
+  - 登录模块由 query 变更为动态路由 params &nbsp;-&nbsp; by @honghuangdc [<samp>(225c4)</samp>](https://github.com/honghuangdc/soybean-admin/commit/225c4fe)
   - 精简版+动态路由权限初步 &nbsp;-&nbsp; by @soybeanjs [<samp>(de205)</samp>](https://github.com/honghuangdc/soybean-admin/commit/de2057f)
   - 单独一级路由相关逻辑重构 &nbsp;-&nbsp; by @honghuangdc [<samp>(ab9a6)</samp>](https://github.com/honghuangdc/soybean-admin/commit/ab9a6a2)
   - 单独路由逻辑重构、路由转换函数优化 &nbsp;-&nbsp; by @soybeanjs [<samp>(b36a6)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b36a62b)
-  - 恢复pinia默认写法 &nbsp;-&nbsp; by @soybeanjs [<samp>(b2a4d)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b2a4ddf)
+  - 恢复 pinia 默认写法 &nbsp;-&nbsp; by @soybeanjs [<samp>(b2a4d)</samp>](https://github.com/honghuangdc/soybean-admin/commit/b2a4ddf)
 - **styles**:
   - 样式调整 &nbsp;-&nbsp; by @honghuangdc [<samp>(f2910)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f29106e)
 
@@ -1162,8 +1161,8 @@
   - 升级依赖 &nbsp;-&nbsp; by @soybeanjs [<samp>(777cf)</samp>](https://github.com/honghuangdc/soybean-admin/commit/777cf8e)
 - **projects**:
   - 环境变量获取方式变更 &nbsp;-&nbsp; by @honghuangdc [<samp>(21c2f)</samp>](https://github.com/honghuangdc/soybean-admin/commit/21c2f5a)
-  - 修改vscode配置 &nbsp;-&nbsp; by @honghuangdc [<samp>(0c577)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0c5770d)
-  - 添加vercel打包的环境 &nbsp;-&nbsp; by @honghuangdc [<samp>(371fa)</samp>](https://github.com/honghuangdc/soybean-admin/commit/371fad4)
+  - 修改 vscode 配置 &nbsp;-&nbsp; by @honghuangdc [<samp>(0c577)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0c5770d)
+  - 添加 vercel 打包的环境 &nbsp;-&nbsp; by @honghuangdc [<samp>(371fa)</samp>](https://github.com/honghuangdc/soybean-admin/commit/371fad4)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
@@ -1185,7 +1184,7 @@
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
-- **components**: 修复HorizontalLayout布局 &nbsp;-&nbsp; by @soybeanjs [<samp>(9fb64)</samp>](https://github.com/honghuangdc/soybean-admin/commit/9fb641f)
+- **components**: 修复 HorizontalLayout 布局 &nbsp;-&nbsp; by @soybeanjs [<samp>(9fb64)</samp>](https://github.com/honghuangdc/soybean-admin/commit/9fb641f)
 
 ### &nbsp;&nbsp;&nbsp;💅 Refactors
 
@@ -1209,27 +1208,27 @@
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
 
-- **components**: 添加多页签Tab点击后自动往中间滚动 &nbsp;-&nbsp; by @soybeanjs [<samp>(8ce62)</samp>](https://github.com/honghuangdc/soybean-admin/commit/8ce627a)
+- **components**: 添加多页签 Tab 点击后自动往中间滚动 &nbsp;-&nbsp; by @soybeanjs [<samp>(8ce62)</samp>](https://github.com/honghuangdc/soybean-admin/commit/8ce627a)
 - **projects**: 新增网址导航页面 &nbsp;-&nbsp; by @honghuangdc [<samp>(32aa5)</samp>](https://github.com/honghuangdc/soybean-admin/commit/32aa5ee)
-- **storage**: local存储增加有效期 &nbsp;-&nbsp; by @yanbowe [<samp>(e6c9b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/e6c9b35)
+- **storage**: local 存储增加有效期 &nbsp;-&nbsp; by @yanbowe [<samp>(e6c9b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/e6c9b35)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
 - **components**:
-  - 修复多页签Tab自动滚动问题 &nbsp;-&nbsp; by @soybeanjs [<samp>(20aa3)</samp>](https://github.com/honghuangdc/soybean-admin/commit/20aa39f)
-  - 修复多页签按钮风格的tab滚动问题 &nbsp;-&nbsp; by @soybeanjs [<samp>(c429c)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c429cd0)
+  - 修复多页签 Tab 自动滚动问题 &nbsp;-&nbsp; by @soybeanjs [<samp>(20aa3)</samp>](https://github.com/honghuangdc/soybean-admin/commit/20aa39f)
+  - 修复多页签按钮风格的 tab 滚动问题 &nbsp;-&nbsp; by @soybeanjs [<samp>(c429c)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c429cd0)
 - **projects**:
   - 修复打包构建时图标错误 &nbsp;-&nbsp; by @soybeanjs [<samp>(93f9a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/93f9aa9)
-  - 添加西瓜视频实例在onUnMounted的销毁，多页签居中距离精确 &nbsp;-&nbsp; by @soybeanjs [<samp>(73896)</samp>](https://github.com/honghuangdc/soybean-admin/commit/738964a)
+  - 添加西瓜视频实例在 onUnMounted 的销毁，多页签居中距离精确 &nbsp;-&nbsp; by @soybeanjs [<samp>(73896)</samp>](https://github.com/honghuangdc/soybean-admin/commit/738964a)
 - **types**:
-  - 添加dotEnv类型的非空判断 &nbsp;-&nbsp; by @soybeanjs [<samp>(cff11)</samp>](https://github.com/honghuangdc/soybean-admin/commit/cff11d9)
+  - 添加 dotEnv 类型的非空判断 &nbsp;-&nbsp; by @soybeanjs [<samp>(cff11)</samp>](https://github.com/honghuangdc/soybean-admin/commit/cff11d9)
 
 ### &nbsp;&nbsp;&nbsp;💅 Refactors
 
 - **components**:
-  - blankLayout引入GlobalContent &nbsp;-&nbsp; by @soybeanjs [<samp>(1ffb7)</samp>](https://github.com/honghuangdc/soybean-admin/commit/1ffb75a)
+  - blankLayout 引入 GlobalContent &nbsp;-&nbsp; by @soybeanjs [<samp>(1ffb7)</samp>](https://github.com/honghuangdc/soybean-admin/commit/1ffb75a)
 - **projects**:
-  - axios处理的请求结果去除网路状态 &nbsp;-&nbsp; by @honghuangdc [<samp>(05696)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0569666)
+  - axios 处理的请求结果去除网路状态 &nbsp;-&nbsp; by @honghuangdc [<samp>(05696)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0569666)
   - 文件夹位置规范 &nbsp;-&nbsp; by @honghuangdc [<samp>(f5a5f)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f5a5f44)
   - 细节完善 &nbsp;-&nbsp; by @honghuangdc [<samp>(62611)</samp>](https://github.com/honghuangdc/soybean-admin/commit/6261156)
 
@@ -1254,8 +1253,8 @@
 
 - **projects**:
   - 请求函数重构初步 &nbsp;-&nbsp; by @soybeanjs [<samp>(9f643)</samp>](https://github.com/honghuangdc/soybean-admin/commit/9f64321)
-  - axios封装：文件夹规范，错误处理完善 &nbsp;-&nbsp; by @honghuangdc [<samp>(451c7)</samp>](https://github.com/honghuangdc/soybean-admin/commit/451c754)
-  - axios封装完成 &nbsp;-&nbsp; by @soybeanjs [<samp>(03b39)</samp>](https://github.com/honghuangdc/soybean-admin/commit/03b398a)
+  - axios 封装：文件夹规范，错误处理完善 &nbsp;-&nbsp; by @honghuangdc [<samp>(451c7)</samp>](https://github.com/honghuangdc/soybean-admin/commit/451c754)
+  - axios 封装完成 &nbsp;-&nbsp; by @soybeanjs [<samp>(03b39)</samp>](https://github.com/honghuangdc/soybean-admin/commit/03b398a)
 
 ### &nbsp;&nbsp;&nbsp;📦 Build
 
@@ -1270,6 +1269,3 @@
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
-
-
-

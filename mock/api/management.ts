@@ -5,7 +5,7 @@ const apis: MockMethod[] = [
   {
     url: '/mock/getAllUserList',
     method: 'post',
-    response: (): Service.MockServiceResult<ApiUserManagement.User[]> => {
+    response: (): Service.MockServiceResult<ApiSys.PageSysUser[]> => {
       const data = mock({
         'list|1000': [
           {

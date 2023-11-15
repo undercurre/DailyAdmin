@@ -2,25 +2,42 @@
   <n-modal v-model:show="modalVisible" preset="card" :title="title" class="w-700px">
     <n-form ref="formRef" label-placement="left" :label-width="80" :model="formModel" :rules="rules">
       <n-grid :cols="24" :x-gap="18">
-        <n-form-item-grid-item :span="12" label="用户名" path="userName">
-          <n-input v-model:value="formModel.userName" />
+        <n-form-item-grid-item :span="12" label="用户名" path="username">
+          <n-input v-model:value="formModel.username" />
         </n-form-item-grid-item>
-        <n-form-item-grid-item :span="12" label="年龄" path="age">
-          <n-input-number v-model:value="formModel.age" clearable />
+        <n-form-item-grid-item :span="12" label="密码" path="password">
+          <n-input
+            v-model:value="formModel.password"
+            type="password"
+            show-password-on="click"
+            placeholder="请输入密码"
+          />
         </n-form-item-grid-item>
-        <n-form-item-grid-item :span="12" label="性别" path="gender">
-          <n-radio-group v-model:value="formModel.gender">
-            <n-radio v-for="item in genderOptions" :key="item.value" :value="item.value">{{ item.label }}</n-radio>
+        <n-form-item-grid-item :span="12" label="确认密码" path="confirmPassword">
+          <n-input
+            v-model:value="formModel.confirmPassword"
+            type="password"
+            show-password-on="click"
+            placeholder="请再次输入密码"
+          />
+        </n-form-item-grid-item>
+        <n-form-item-grid-item :span="12" label="昵称" path="nickName">
+          <n-input v-model:value="formModel.nickName" />
+        </n-form-item-grid-item>
+        <n-form-item-grid-item :span="12" label="姓名" path="realName">
+          <n-input v-model:value="formModel.realName" />
+        </n-form-item-grid-item>
+        <n-form-item-grid-item :span="12" label="性别" path="sex">
+          <n-radio-group v-model:value="formModel.sex">
+            <n-radio value="男">男</n-radio>
+            <n-radio value="女">女</n-radio>
           </n-radio-group>
         </n-form-item-grid-item>
-        <n-form-item-grid-item :span="12" label="手机号" path="phone">
-          <n-input v-model:value="formModel.phone" />
+        <n-form-item-grid-item :span="12" label="状态" path="status">
+          <n-switch v-model:value="formModel.status" :checked-value="1" :unchecked-value="0" />
         </n-form-item-grid-item>
-        <n-form-item-grid-item :span="12" label="邮箱" path="email">
-          <n-input v-model:value="formModel.email" />
-        </n-form-item-grid-item>
-        <n-form-item-grid-item :span="12" label="状态" path="userStatus">
-          <n-select v-model:value="formModel.userStatus" :options="userStatusOptions" />
+        <n-form-item-grid-item :span="12" label="所属角色" path="roleIds">
+          <n-select v-model:value="formModel.roleIds" :options="sysRoleOptions" />
         </n-form-item-grid-item>
       </n-grid>
       <n-space class="w-full pt-16px" :size="24" justify="end">
@@ -32,12 +49,20 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, reactive, watch } from 'vue';
-import type { FormInst, FormItemRule } from 'naive-ui';
-import { genderOptions, userStatusOptions } from '@/constants';
-import { formRules, createRequiredFormRule } from '@/utils';
+import { ref, computed, reactive, watch, toRefs } from 'vue';
+import type { Ref } from 'vue';
+import type { FormInst, FormItemRule, SelectOption } from 'naive-ui';
+import { fetchAllSysRole } from '@/service';
+import { formRules, createRequiredFormRule, getConfirmPwdRule } from '@/utils';
 
-export interface Props {
+/**
+ * 弹窗类型
+ * add: 新增
+ * edit: 编辑
+ */
+export type ModalType = 'add' | 'edit';
+
+interface Props {
   /** 弹窗可见性 */
   visible: boolean;
   /**
@@ -45,12 +70,10 @@ export interface Props {
    * add: 新增
    * edit: 编辑
    */
-  type?: 'add' | 'edit';
+  type?: ModalType;
   /** 编辑的表格行数据 */
-  editData?: UserManagement.User | null;
+  editData?: ApiSys.SysUser | null;
 }
-
-export type ModalType = NonNullable<Props['type']>;
 
 defineOptions({ name: 'TableActionModal' });
 
@@ -87,28 +110,49 @@ const title = computed(() => {
 
 const formRef = ref<HTMLElement & FormInst>();
 
-type FormModel = Pick<UserManagement.User, 'userName' | 'age' | 'gender' | 'phone' | 'email' | 'userStatus'>;
+type FormModel = Pick<
+  ApiSys.CreateSysUserParams,
+  'id' | 'username' | 'password' | 'nickName' | 'realName' | 'sex' | 'status' | 'roleIds'
+> & {
+  confirmPassword: string;
+};
 
 const formModel = reactive<FormModel>(createDefaultFormModel());
 
-const rules: Record<keyof FormModel, FormItemRule | FormItemRule[]> = {
-  userName: createRequiredFormRule('请输入用户名'),
-  age: createRequiredFormRule('请输入年龄'),
-  gender: createRequiredFormRule('请选择性别'),
-  phone: formRules.phone,
-  email: formRules.email,
-  userStatus: createRequiredFormRule('请选择用户状态')
+type FormRuleRequiredKey = Extract<keyof FormModel, 'username' | 'password' | 'confirmPassword'>;
+
+const rules: Record<FormRuleRequiredKey, FormItemRule | FormItemRule[]> = {
+  username: createRequiredFormRule('请输入用户名'),
+  password: formRules.pwd,
+  confirmPassword: getConfirmPwdRule(toRefs(formModel).password)
 };
 
 function createDefaultFormModel(): FormModel {
   return {
-    userName: '',
-    age: null,
-    gender: null,
-    phone: '',
-    email: null,
-    userStatus: null
+    id: -1,
+    username: '',
+    password: '',
+    confirmPassword: '',
+    nickName: '',
+    realName: '',
+    sex: '男',
+    status: 1,
+    roleIds: []
   };
+}
+
+const sysRoleOptions: Ref<SelectOption[]> = ref([]);
+
+async function getSysRoles() {
+  const { data } = await fetchAllSysRole();
+  if (data) {
+    sysRoleOptions.value = data.map(item => {
+      return {
+        label: `${item.name}(${item.alias})`,
+        value: item.id
+      };
+    });
+  }
 }
 
 function handleUpdateFormModel(model: Partial<FormModel>) {
@@ -136,6 +180,12 @@ async function handleSubmit() {
   window.$message?.success('新增成功!');
   closeModal();
 }
+
+function init() {
+  getSysRoles();
+}
+
+init();
 
 watch(
   () => props.visible,
