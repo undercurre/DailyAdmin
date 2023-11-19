@@ -119,11 +119,11 @@ interface Activity {
 }
 
 const activity: Activity[] = [
-  { id: 4, content: 'Soybean 刚才把工作台页面随便写了一些，凑合能看了！', time: '2021-11-07 22:45:32' },
-  { id: 3, content: 'Soybean 正在忙于为soybean-admin写项目说明文档！', time: '2021-11-03 20:33:31' },
-  { id: 2, content: 'Soybean 准备为soybean-admin 1.0的发布做充分的准备工作！', time: '2021-10-31 22:43:12' },
-  { id: 1, content: '@yanbowe 向soybean-admin提交了一个bug，多标签栏不会自适应。', time: '2021-10-27 10:24:54' },
-  { id: 0, content: 'Soybean 在2021年5月28日创建了开源项目soybean-admin！', time: '2021-05-28 22:22:22' }
+  { id: 4, content: 'Undercurre 刚才把工作台页面随便写了一些，凑合能看了！', time: '2021-11-07 22:45:32' },
+  { id: 3, content: 'Undercurre 正在忙于为Undercurre-admin写项目说明文档！', time: '2021-11-03 20:33:31' },
+  { id: 2, content: 'Undercurre 准备为Undercurre-admin 1.0的发布做充分的准备工作！', time: '2021-10-31 22:43:12' },
+  { id: 1, content: '@yanbowe 向Undercurre-admin提交了一个bug，多标签栏不会自适应。', time: '2021-10-27 10:24:54' },
+  { id: 0, content: 'Undercurre 在2021年5月28日创建了开源项目Undercurre-admin！', time: '2021-05-28 22:22:22' }
 ];
 
 interface Shortcuts {

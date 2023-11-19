@@ -14,9 +14,9 @@
     <n-space :vertical="true" :size="24">
       <div class="flex-y-center justify-between">
         <n-checkbox v-model:checked="rememberMe">{{ $t('page.login.pwdLogin.rememberMe') }}</n-checkbox>
-        <n-button :text="true" @click="toLoginModule('reset-pwd')">
+        <!-- <n-button :text="true" @click="toLoginModule('reset-pwd')">
           {{ $t('page.login.pwdLogin.forgetPassword') }}
-        </n-button>
+        </n-button> -->
       </div>
       <n-button
         type="primary"
@@ -29,16 +29,16 @@
         {{ $t('page.login.common.confirm') }}
       </n-button>
       <div class="flex-y-center justify-between">
-        <n-button class="flex-1" :block="true" @click="toLoginModule('code-login')">
+        <!-- <n-button class="flex-1" :block="true" @click="toLoginModule('code-login')">
           {{ loginModuleLabels['code-login'] }}
         </n-button>
-        <div class="w-12px"></div>
-        <n-button class="flex-1" :block="true" @click="toLoginModule('register')">
+        <div class="w-12px"></div> -->
+        <!-- <n-button class="flex-1" :block="true" @click="toLoginModule('register')">
           {{ loginModuleLabels.register }}
-        </n-button>
+        </n-button> -->
       </div>
     </n-space>
-    <other-account @login="handleLoginOtherAccount" />
+    <!-- <other-account @login="handleLoginOtherAccount" /> -->
   </n-form>
 </template>
 
@@ -58,8 +58,8 @@ const { toLoginModule } = useRouterPush();
 const formRef = ref<HTMLElement & FormInst>();
 
 const model = reactive({
-  userName: 'Soybean',
-  password: 'soybean123'
+  userName: 'Undercurre',
+  password: 'Undercurre123'
 });
 
 const rules: FormRules = {
@@ -76,10 +76,10 @@ async function handleSubmit() {
   login(userName, password);
 }
 
-function handleLoginOtherAccount(param: { userName: string; password: string }) {
-  const { userName, password } = param;
-  login(userName, password);
-}
+// function handleLoginOtherAccount(param: { userName: string; password: string }) {
+//   const { userName, password } = param;
+//   login(userName, password);
+// }
 </script>
 
 <style scoped></style>

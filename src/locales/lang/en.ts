@@ -1,6 +1,6 @@
 const locale: I18nType.Schema = {
   system: {
-    title: 'SoybeanAdmin'
+    title: 'UndercurreAdmin'
   },
   common: {
     add: 'Add',

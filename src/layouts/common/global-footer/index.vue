@@ -1,6 +1,6 @@
 <template>
   <dark-mode-container class="flex-center h-full" :inverted="theme.footer.inverted">
-    <span>Copyright ©2021 NELONG</span>
+    <span>Copyright ©2021 Undercurre</span>
   </dark-mode-container>
 </template>
 

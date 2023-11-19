@@ -1,13 +1,13 @@
 <div align="center">
 	<img src="./public/favicon.svg" style="width: 160px;"/>
-	<h1>NELONG</h1>
+	<h1>Undercurre</h1>
 </div>
 
 [![license](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE) ![](https://img.shields.io/github/stars/honghuangdc/soybean-admin) ![](https://img.shields.io/github/forks/honghuangdc/soybean-admin)
 
 ## 注意
 
-NELONG 正在重构，重构后的版本为 v1.0，变更点如下:
+Undercurre 正在重构，重构后的版本为 v1.0，变更点如下:
 
 - 采用基于 pnpm 的 monorepo 管理项目
 - 第三方 soybeanjs 的工具库直接抽离到项目中(ElegantRouter 除外)，不再作为依赖
@@ -27,7 +27,7 @@ AntDesignVue 版本进度 90%
 
 ## 简介
 
-[NELONG](https://github.com/honghuangdc/soybean-admin) 是一个基于 Vue3、Vite3、TypeScript、NaiveUI、Pinia 和 UnoCSS 的清新优雅的中后台模版，它使用了最新流行的前端技术栈，内置丰富的主题配置，有着极高的代码规范，基于文件的路由系统以及基于 Mock 的动态权限路由，开箱即用的中后台前端解决方案，也可用于学习参考。
+[Undercurre](https://github.com/honghuangdc/soybean-admin) 是一个基于 Vue3、Vite3、TypeScript、NaiveUI、Pinia 和 UnoCSS 的清新优雅的中后台模版，它使用了最新流行的前端技术栈，内置丰富的主题配置，有着极高的代码规范，基于文件的路由系统以及基于 Mock 的动态权限路由，开箱即用的中后台前端解决方案，也可用于学习参考。
 
 ## 特性
 
@@ -54,7 +54,7 @@ AntDesignVue 版本进度 90%
 
 ## 在线预览
 
-- [NELONG 预览地址](https://admin.soybeanjs.cn/)
+- [Undercurre 预览地址](https://admin.soybeanjs.cn/)
 
 ## 文档
 
@@ -177,7 +177,7 @@ docker run -d -p 80:80 soybean-admin-image
 
 ## 交流
 
-`NELONG` 是完全开源免费的项目，在帮助开发者更方便地进行中大型管理系统开发，同时也提供微信和 QQ 交流群，使用问题欢迎在群内提问。
+`Undercurre` 是完全开源免费的项目，在帮助开发者更方便地进行中大型管理系统开发，同时也提供微信和 QQ 交流群，使用问题欢迎在群内提问。
 
   <div style="display:flex;">
   	<div style="padding-right:24px;">

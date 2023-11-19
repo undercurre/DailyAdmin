@@ -26,8 +26,8 @@ export const formRules: CustomFormRules = {
     { pattern: REGEXP_PHONE, message: '手机号码格式错误', trigger: 'input' }
   ],
   pwd: [
-    createRequiredFormRule('请输入密码'),
-    { pattern: REGEXP_PWD, message: '密码为6-18位数字/字符/符号，至少2种组合', trigger: 'input' }
+    createRequiredFormRule('请输入密码')
+    // { pattern: REGEXP_PWD, message: '密码为6-18位数字/字符/符号，至少2种组合', trigger: 'input' }
   ],
   code: [
     createRequiredFormRule('请输入验证码'),

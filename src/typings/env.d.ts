@@ -19,7 +19,7 @@ interface ServiceEnvConfigWithProxyPattern extends ServiceEnvConfig {
    * - 和后端请求地址的前缀无关
    * - 有多个后端请求实例时，需要创建不同的值
    */
-  proxyPattern: '/proxy-pattern';
+  proxyPattern: '/api';
 }
 
 interface ImportMetaEnv {
@@ -67,7 +67,7 @@ interface ImportMetaEnv {
   /** hash路由模式 */
   readonly VITE_HASH_ROUTE?: 'Y' | 'N';
   /** 是否应用自动生成路由的插件 */
-  readonly VITE_SOYBEAN_ROUTE_PLUGIN?: 'Y' | 'N';
+  readonly VITE_Undercurre_ROUTE_PLUGIN?: 'Y' | 'N';
   /** 是否是部署的vercel */
   readonly VITE_VERCEL?: 'Y' | 'N';
 }

@@ -4,13 +4,13 @@ type ServiceEnv = Record<ServiceEnvType, ServiceEnvConfig>;
 /** 不同请求服务的环境配置 */
 const serviceEnv: ServiceEnv = {
   dev: {
-    url: 'http://localhost:8080'
+    url: 'http://81.71.85.68:1337'
   },
   test: {
-    url: 'http://localhost:8080'
+    url: 'http://81.71.85.68:1337'
   },
   prod: {
-    url: 'http://localhost:8080'
+    url: 'http://81.71.85.68:1337'
   }
 };
 
@@ -25,6 +25,6 @@ export function getServiceEnvConfig(env: ImportMetaEnv): ServiceEnvConfigWithPro
 
   return {
     ...config,
-    proxyPattern: '/proxy-pattern'
+    proxyPattern: '/strapi'
   };
 }

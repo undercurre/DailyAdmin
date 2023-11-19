@@ -6,12 +6,12 @@ interface UserModel extends Auth.UserInfo {
 
 export const userModel: UserModel[] = [
   {
-    token: '__TOKEN_SOYBEAN__',
-    refreshToken: '__REFRESH_TOKEN_SOYBEAN__',
+    token: '__TOKEN_Undercurre__',
+    refreshToken: '__REFRESH_TOKEN_Undercurre__',
     userId: '0',
-    userName: 'Soybean',
+    userName: 'Undercurre',
     userRole: 'super',
-    password: 'soybean123'
+    password: 'Undercurre123'
   },
   {
     token: '__TOKEN_SUPER__',
