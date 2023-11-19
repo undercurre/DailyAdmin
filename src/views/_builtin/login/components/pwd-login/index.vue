@@ -45,15 +45,15 @@
 <script setup lang="ts">
 import { reactive, ref } from 'vue';
 import type { FormInst, FormRules } from 'naive-ui';
-import { loginModuleLabels } from '@/constants';
+// import { loginModuleLabels } from '@/constants';
 import { useAuthStore } from '@/store';
-import { useRouterPush } from '@/composables';
+// import { useRouterPush } from '@/composables';
 import { formRules } from '@/utils';
-import { OtherAccount } from './components';
+// import { OtherAccount } from './components';
 
 const auth = useAuthStore();
 const { login } = useAuthStore();
-const { toLoginModule } = useRouterPush();
+// const { toLoginModule } = useRouterPush();
 
 const formRef = ref<HTMLElement & FormInst>();
 

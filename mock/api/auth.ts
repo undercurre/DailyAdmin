@@ -34,15 +34,15 @@ const apis: MockMethod[] = [
         };
       }
 
-      const findItem = userModel.find(item => item.userName === userName && item.password === password);
+      const findItem = userModel.find(item => item.user.username === userName);
 
       if (findItem) {
         return {
           code: 200,
           message: 'ok',
           data: {
-            token: findItem.token,
-            refreshToken: findItem.refreshToken
+            jwt: findItem.jwt,
+            user: findItem.user
           }
         };
       }
@@ -70,15 +70,20 @@ const apis: MockMethod[] = [
         };
       }
       const userInfo: Auth.UserInfo = {
-        userId: '',
-        userName: '',
-        userRole: 'user'
+        id: 0,
+        username: 'user',
+        email: '',
+        provider: 'local',
+        confirmed: true,
+        blocked: false,
+        createdAt: '',
+        updatedAt: ''
       };
       const isInUser = userModel.some(item => {
-        const flag = item.token === authorization;
+        const flag = item.jwt === authorization;
         if (flag) {
-          const { userId: itemUserId, userName, userRole } = item;
-          Object.assign(userInfo, { userId: itemUserId, userName, userRole });
+          const { id, username } = item.user;
+          Object.assign(userInfo, { userId: id, username });
         }
         return flag;
       });
@@ -104,15 +109,15 @@ const apis: MockMethod[] = [
     response: (options: Service.MockOption): Service.MockServiceResult<ApiAuth.Token | null> => {
       const { refreshToken = '' } = options.body;
 
-      const findItem = userModel.find(item => item.refreshToken === refreshToken);
+      const findItem = userModel.find(item => item.jwt === refreshToken);
 
       if (findItem) {
         return {
           code: 200,
           message: 'ok',
           data: {
-            token: findItem.token,
-            refreshToken: findItem.refreshToken
+            jwt: findItem.jwt,
+            user: findItem.user
           }
         };
       }

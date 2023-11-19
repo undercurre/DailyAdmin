@@ -111,13 +111,13 @@ export const useRouteStore = defineStore('route-store', {
       const { resetAuthStore } = useAuthStore();
       const { initHomeTab } = useTabStore();
 
-      const { userId } = localStg.get('userInfo') || {};
+      const { id } = localStg.get('userInfo') || {};
 
-      if (!userId) {
+      if (!id) {
         throw new Error('userId 不能为空!');
       }
 
-      const { error, data } = await fetchUserRoutes(userId);
+      const { error, data } = await fetchUserRoutes(id.toString());
 
       if (!error) {
         this.handleAuthRoute(sortRoutes(data.routes));
@@ -135,9 +135,9 @@ export const useRouteStore = defineStore('route-store', {
     /** 初始化静态路由 */
     async initStaticRoute() {
       const { initHomeTab } = useTabStore();
-      const auth = useAuthStore();
+      // const auth = useAuthStore();
 
-      const routes = filterAuthRoutesByUserPermission(staticRoutes, auth.userInfo.userRole);
+      const routes = filterAuthRoutesByUserPermission(staticRoutes, 'super');
       this.handleAuthRoute(routes);
 
       initHomeTab(this.routeHomeName, router);

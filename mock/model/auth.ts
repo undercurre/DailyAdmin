@@ -1,40 +1,20 @@
-interface UserModel extends Auth.UserInfo {
-  token: string;
-  refreshToken: string;
-  password: string;
+interface UserModel {
+  jwt: string;
+  user: Auth.UserInfo;
 }
 
 export const userModel: UserModel[] = [
   {
-    token: '__TOKEN_Undercurre__',
-    refreshToken: '__REFRESH_TOKEN_Undercurre__',
-    userId: '0',
-    userName: 'Undercurre',
-    userRole: 'super',
-    password: 'Undercurre123'
-  },
-  {
-    token: '__TOKEN_SUPER__',
-    refreshToken: '__REFRESH_TOKEN_SUPER__',
-    userId: '1',
-    userName: 'Super',
-    userRole: 'super',
-    password: 'super123'
-  },
-  {
-    token: '__TOKEN_ADMIN__',
-    refreshToken: '__REFRESH_TOKEN_ADMIN__',
-    userId: '2',
-    userName: 'Admin',
-    userRole: 'admin',
-    password: 'admin123'
-  },
-  {
-    token: '__TOKEN_USER01__',
-    refreshToken: '__REFRESH_TOKEN_USER01__',
-    userId: '3',
-    userName: 'User01',
-    userRole: 'user',
-    password: 'user01123'
+    jwt: '__TOKEN_Undercurre__',
+    user: {
+      id: 1,
+      username: 'lirunhua',
+      email: 'undercurre@163.com',
+      provider: 'local',
+      confirmed: true,
+      blocked: false,
+      createdAt: '2023-06-24T16:35:36.937Z',
+      updatedAt: '2023-06-24T16:35:36.937Z'
+    }
   }
 ];
