@@ -87,7 +87,6 @@ export const useAuthStore = defineStore('auth-store', {
      */
     async loginByToken(backendToken: ApiAuth.Token) {
       let successFlag = false;
-
       // 先把token存储到缓存中(后面接口的请求头需要token)
       const { jwt } = backendToken;
       localStg.set('token', jwt);

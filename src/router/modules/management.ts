@@ -4,51 +4,15 @@ const management: AuthRoute.Route = {
   component: 'basic',
   children: [
     {
-      name: 'management_auth',
-      path: '/management/auth',
+      name: 'management_task',
+      path: '/management/task',
       component: 'self',
       meta: {
-        title: '权限管理',
-        i18nTitle: 'routes.management.auth',
+        title: '任务管理',
+        i18nTitle: 'routes.management.task',
         requiresAuth: true,
         keepAlive: true,
-        icon: 'ic:baseline-security'
-      }
-    },
-    {
-      name: 'management_role',
-      path: '/management/role',
-      component: 'self',
-      meta: {
-        title: '角色管理',
-        i18nTitle: 'routes.management.role',
-        requiresAuth: true,
-        keepAlive: true,
-        icon: 'carbon:user-role'
-      }
-    },
-    {
-      name: 'management_user',
-      path: '/management/user',
-      component: 'self',
-      meta: {
-        title: '用户管理',
-        i18nTitle: 'routes.management.user',
-        requiresAuth: true,
-        keepAlive: true,
-        icon: 'ic:round-manage-accounts'
-      }
-    },
-    {
-      name: 'management_route',
-      path: '/management/route',
-      component: 'self',
-      meta: {
-        title: '路由管理',
-        i18nTitle: 'routes.management.route',
-        requiresAuth: true,
-        keepAlive: true,
-        icon: 'material-symbols:route'
+        icon: 'mingcute:task-2-line'
       }
     }
   ],

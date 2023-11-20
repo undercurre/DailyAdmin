@@ -82,10 +82,7 @@ const locale: I18nType.Schema = {
     },
     management: {
       _value: 'System Management',
-      auth: 'Auth',
-      role: 'Role',
-      route: 'Route',
-      user: 'User'
+      task: 'Task'
     },
     about: 'About'
   },

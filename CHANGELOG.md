@@ -24,7 +24,7 @@
   - correct the lang file name & add recommend vscode plugin i18n-ally &nbsp;-&nbsp; by @honghuangdc [<samp>(864ec)</samp>](https://github.com/honghuangdc/soybean-admin/commit/864ec47)
   - fix reload button animate &nbsp;-&nbsp; by @honghuangdc [<samp>(41f23)</samp>](https://github.com/honghuangdc/soybean-admin/commit/41f2338)
 - **styles**:
-  - 用户管理页面布局自适应屏幕高度 (fixed #253) &nbsp;-&nbsp; by @honghuangdc in https://github.com/honghuangdc/soybean-admin/issues/253 [<samp>(0f7b9)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0f7b9d5)
+  - 任务管理页面布局自适应屏幕高度 (fixed #253) &nbsp;-&nbsp; by @honghuangdc in https://github.com/honghuangdc/soybean-admin/issues/253 [<samp>(0f7b9)</samp>](https://github.com/honghuangdc/soybean-admin/commit/0f7b9d5)
 
 ### &nbsp;&nbsp;&nbsp;🔥 Performance
 
@@ -392,7 +392,7 @@
   - 添加项目管理的页面 &nbsp;-&nbsp; by @soybeanjs [<samp>(c33b5)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c33b5eb)
   - useNaiveTable 函数：类型部分 &nbsp;-&nbsp; by @soybeanjs [<samp>(02992)</samp>](https://github.com/honghuangdc/soybean-admin/commit/02992dc)
   - 添加请求适配 adapter 层应用的示例页面 &nbsp;-&nbsp; by @soybeanjs [<samp>(8d11a)</samp>](https://github.com/honghuangdc/soybean-admin/commit/8d11a6a)
-  - 实现用户管理页面 &nbsp;-&nbsp; by @soybeanjs [<samp>(472f9)</samp>](https://github.com/honghuangdc/soybean-admin/commit/472f93b)
+  - 实现任务管理页面 &nbsp;-&nbsp; by @soybeanjs [<samp>(472f9)</samp>](https://github.com/honghuangdc/soybean-admin/commit/472f93b)
   - 全局搜索菜单及消息通知适配移动端 &nbsp;-&nbsp; by @yanbowe [<samp>(97e2f)</samp>](https://github.com/honghuangdc/soybean-admin/commit/97e2ffd)
   - support constant route without login status[支持未登录状态下访问自定义的固定路由] &nbsp;-&nbsp; by @soybeanjs [<samp>(a5391)</samp>](https://github.com/honghuangdc/soybean-admin/commit/a539112)
   - add pinia setup syntax example: setup-store[添加 setup syntax 的 pinia 示例 setup-store] &nbsp;-&nbsp; by @soybeanjs [<samp>(82c4b)</samp>](https://github.com/honghuangdc/soybean-admin/commit/82c4b09)
@@ -439,7 +439,7 @@
   - 抽离格式化相关依赖配置 &nbsp;-&nbsp; by @soybeanjs [<samp>(f4d37)</samp>](https://github.com/honghuangdc/soybean-admin/commit/f4d37cf)
   - 代码优化 &nbsp;-&nbsp; by @soybeanjs [<samp>(49f95)</samp>](https://github.com/honghuangdc/soybean-admin/commit/49f95c4)
   - cancel autoinstall @iconify-json [取消@iconify-json 自动安装] &nbsp;-&nbsp; by @soybeanjs [<samp>(c29b8)</samp>](https://github.com/honghuangdc/soybean-admin/commit/c29b887)
-  - refactor page: user-management [重构用户管理页面] &nbsp;-&nbsp; by @soybeanjs [<samp>(468b4)</samp>](https://github.com/honghuangdc/soybean-admin/commit/468b4bb)
+  - refactor page: user-management [重构任务管理页面] &nbsp;-&nbsp; by @soybeanjs [<samp>(468b4)</samp>](https://github.com/honghuangdc/soybean-admin/commit/468b4bb)
 
 ### &nbsp;&nbsp;&nbsp;📖 Documentation
 

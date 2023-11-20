@@ -390,10 +390,7 @@ declare namespace I18nType {
       };
       management: {
         _value: string;
-        auth: string;
-        role: string;
-        route: string;
-        user: string;
+        task: string;
       };
       about: string;
     };

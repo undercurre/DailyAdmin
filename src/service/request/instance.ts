@@ -70,8 +70,17 @@ export default class CustomAxiosInstance {
       (async response => {
         const { status, config } = response;
         if (status === 200 || status < 300 || status === 304) {
-          const backend = response.data;
+          let backend = response.data;
           const { codeKey, dataKey, successCode } = this.backendConfig;
+
+          if (!backend[codeKey] && !backend[dataKey]) {
+            const temp = {
+              [codeKey]: successCode,
+              [dataKey]: backend
+            };
+            backend = temp;
+          }
+
           // 请求成功
           if (backend[codeKey] === successCode) {
             return handleServiceResult(null, backend[dataKey]);

@@ -1,9 +1,39 @@
-// import { adapter } from '@/utils';
-// import { mockRequest } from '../request';
-// import { adapterOfFetchUserList } from './management.adapter';
+import { adapter } from '~/src/utils';
+import { request } from '../request';
+import { adapterOfFetchTaskList } from './management.adapter';
 
-/** 获取用户列表 */
-// export const fetchUserList = async () => {
-//   const data = await mockRequest.post<ApiUserManagement.User[] | null>('/getAllUserList');
-//   return adapter(adapterOfFetchUserList, data);
-// };
+/**
+@description 获取任务列表
+*/
+
+export const fetchTaskList = async () => {
+  const data = await request.get<ApiManagement.Task[] | null>('/api/projects');
+  return adapter(adapterOfFetchTaskList, data);
+};
+
+/**
+@description 创建任务
+*/
+
+export const fetchCreateTask = async (form: ApiManagement.CreateTaskDto) => {
+  const data = await request.post<ApiManagement.Task>('/api/projects', form);
+  return data;
+};
+
+/**
+@description 更新任务
+*/
+
+export const fetchUpdateTask = async (taskId: number, form: ApiManagement.UpdateTaskDto) => {
+  const data = await request.put<ApiManagement.Task>(`/api/projects/${taskId}`, form);
+  return data;
+};
+
+/**
+@description 删除任务
+*/
+
+export const fetchDeleteTask = async (taskId: number) => {
+  const data = await request.delete<ApiManagement.Task>(`/api/projects/${taskId}`);
+  return data;
+};

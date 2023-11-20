@@ -1,13 +1,13 @@
-// export function adapterOfFetchUserList(data: ApiUserManagement.User[] | null): UserManagement.User[] {
-//   if (!data) return [];
+export function adapterOfFetchTaskList(data: ApiManagement.Task[] | null): TaskManagement.Task[] {
+  if (!data) return [];
 
-//   return data.map((item, index) => {
-//     const user: UserManagement.User = {
-//       index: index + 1,
-//       key: item.id,
-//       ...item
-//     };
+  return data.map((item, index) => {
+    const task: TaskManagement.Task = {
+      index: index + 1,
+      key: item.id.toString(),
+      ...item
+    };
 
-//     return user;
-//   });
-// }
+    return task;
+  });
+}

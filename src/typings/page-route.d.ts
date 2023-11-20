@@ -33,7 +33,7 @@ declare namespace PageRoute {
     | 'management_auth'
     | 'management_role'
     | 'management_route'
-    | 'management_user';
+    | 'management_task';
 
   /**
    * last degree route key, which has the page file
@@ -52,9 +52,6 @@ declare namespace PageRoute {
     | 'exception_403'
     | 'exception_404'
     | 'exception_500'
-    | 'management_auth'
-    | 'management_role'
-    | 'management_route'
-    | 'management_user'
+    | 'management_task'
   >;
 }

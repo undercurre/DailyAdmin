@@ -15,8 +15,5 @@ export const views: Record<
   exception_403: () => import('./exception/403/index.vue'),
   exception_404: () => import('./exception/404/index.vue'),
   exception_500: () => import('./exception/500/index.vue'),
-  management_auth: () => import('./management/auth/index.vue'),
-  management_role: () => import('./management/role/index.vue'),
-  management_route: () => import('./management/route/index.vue'),
-  management_user: () => import('./management/user/index.vue')
+  management_task: () => import('./management/task/index.vue')
 };
