@@ -7,7 +7,7 @@ import { adapterOfFetchTaskList } from './management.adapter';
 */
 
 export const fetchTaskList = async () => {
-  const data = await request.get<ApiManagement.Task[] | null>('/api/projects');
+  const data = await request.get<ApiManagement.TaskList | null>('/api/projects');
   return adapter(adapterOfFetchTaskList, data);
 };
 
@@ -16,7 +16,11 @@ export const fetchTaskList = async () => {
 */
 
 export const fetchCreateTask = async (form: ApiManagement.CreateTaskDto) => {
-  const data = await request.post<ApiManagement.Task>('/api/projects', form);
+  const data = await request.post<ApiManagement.Task>('/api/projects', {
+    data: {
+      ...form
+    }
+  });
   return data;
 };
 
@@ -25,7 +29,11 @@ export const fetchCreateTask = async (form: ApiManagement.CreateTaskDto) => {
 */
 
 export const fetchUpdateTask = async (taskId: number, form: ApiManagement.UpdateTaskDto) => {
-  const data = await request.put<ApiManagement.Task>(`/api/projects/${taskId}`, form);
+  const data = await request.put<ApiManagement.Task>(`/api/projects/${taskId}`, {
+    data: {
+      ...form
+    }
+  });
   return data;
 };
 

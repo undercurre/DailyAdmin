@@ -6,10 +6,12 @@
           <n-space>
             <n-button type="primary" ghost @click="handleAddTable">
               <icon-ic-round-plus class="text-20px" />
+              添加
             </n-button>
-            <n-button type="error" ghost>
+            <!-- <n-button type="error" ghost>
               <icon-ic-round-delete class="text-20px" />
-            </n-button>
+              批量删除
+            </n-button> -->
           </n-space>
           <n-space align="center" :size="18">
             <n-button size="small" type="primary" @click="getData">
@@ -35,49 +37,68 @@
 </template>
 
 <script setup lang="tsx">
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 import { NSpace, NPopconfirm, NButton } from 'naive-ui';
-import { fetchSysUserByPage } from '@/service';
+import { fetchTaskList, fetchDeleteTask } from '@/service';
 import { useHookTable, useBoolean } from '@/hooks';
 import TableActionModal from './components/table-action-modal.vue';
 import type { ModalType } from './components/table-action-modal.vue';
 
-const { data, loading, columns, pagination, getData } = useHookTable(fetchSysUserByPage, {
+const { data, loading, columns, pagination, getData } = useHookTable(fetchTaskList, {
   apiParams: {
     page: 1,
     pageSize: 10
   },
   transformer: d => ({
-    data: d.records,
-    pageNum: d.current,
-    pageSize: d.size,
-    total: d.total
+    data: d.data,
+    pageNum: d.meta.pagination.page,
+    pageSize: d.meta.pagination.pageSize,
+    total: d.meta.pagination.total
   }),
   columns: () => [
+    // {
+    //   type: 'selection',
+    //   align: 'center'
+    // },
     {
-      type: 'selection',
+      key: 'name',
+      title: '任务名',
       align: 'center'
     },
     {
-      key: 'username',
-      title: '用户名',
-      align: 'center'
-    },
-    {
-      key: 'status',
-      title: '状态',
+      key: 'completed',
+      title: '完成状态',
       align: 'center',
       render(row) {
         return (
           <div>
-            <span>{row.status === 1 ? '已激活' : '未激活'}</span>
+            <span>{row.completed ? '已完成' : '未完成'}</span>
           </div>
         );
       }
     },
     {
-      key: 'email',
-      title: '邮箱',
+      key: 'workTime',
+      title: '倒计时',
+      align: 'center',
+      render(row) {
+        let count = new Date(row.workTime).getTime() - new Date().getTime();
+        count = count > 0 ? count : 0;
+        return (
+          <div>
+            <n-countdown duration={count} active={true} />
+          </div>
+        );
+      }
+    },
+    {
+      key: 'description',
+      title: '描述',
+      align: 'center'
+    },
+    {
+      key: 'note',
+      title: '备注',
       align: 'center'
     },
     {
@@ -112,9 +133,9 @@ function setModalType(type: ModalType) {
   modalType.value = type;
 }
 
-const editData = ref<ApiSys.SysUser | null>(null);
+const editData = ref<TaskManagement.Task | null>(null);
 
-function setEditData(item: ApiSys.SysUser | null) {
+function setEditData(item: TaskManagement.Task | null) {
   editData.value = item;
 }
 
@@ -132,9 +153,16 @@ function handleEditTable(id: number) {
   openModal();
 }
 
-function handleDeleteTable(id: number) {
-  console.log(id);
+async function handleDeleteTable(id: number) {
+  await fetchDeleteTask(id);
+  getData();
 }
+
+watch(visible, (newValue, oldValue) => {
+  if (oldValue === true && newValue === false) {
+    getData();
+  }
+});
 </script>
 
 <style scoped></style>

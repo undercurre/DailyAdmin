@@ -73,7 +73,7 @@ export default class CustomAxiosInstance {
           let backend = response.data;
           const { codeKey, dataKey, successCode } = this.backendConfig;
 
-          if (!backend[codeKey] && !backend[dataKey]) {
+          if (!backend[codeKey] || !backend[dataKey]) {
             const temp = {
               [codeKey]: successCode,
               [dataKey]: backend

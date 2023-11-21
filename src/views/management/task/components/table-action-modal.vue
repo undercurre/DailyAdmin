@@ -2,42 +2,23 @@
   <n-modal v-model:show="modalVisible" preset="card" :title="title" class="w-700px">
     <n-form ref="formRef" label-placement="left" :label-width="80" :model="formModel" :rules="rules">
       <n-grid :cols="24" :x-gap="18">
-        <n-form-item-grid-item :span="12" label="用户名" path="username">
-          <n-input v-model:value="formModel.username" />
+        <n-form-item-grid-item :span="12" label="任务名" path="username">
+          <n-input v-model:value="formModel.name" />
         </n-form-item-grid-item>
-        <n-form-item-grid-item :span="12" label="密码" path="password">
-          <n-input
-            v-model:value="formModel.password"
-            type="password"
-            show-password-on="click"
-            placeholder="请输入密码"
-          />
+        <n-form-item-grid-item :span="12" label="描述" path="description">
+          <n-input v-model:value="formModel.description" />
         </n-form-item-grid-item>
-        <n-form-item-grid-item :span="12" label="确认密码" path="confirmPassword">
-          <n-input
-            v-model:value="formModel.confirmPassword"
-            type="password"
-            show-password-on="click"
-            placeholder="请再次输入密码"
-          />
+        <n-form-item-grid-item :span="12" label="工作时间" path="workTime">
+          <n-date-picker v-model:value="tempWorkTime" type="datetime" clearable />
         </n-form-item-grid-item>
-        <n-form-item-grid-item :span="12" label="昵称" path="nickName">
-          <n-input v-model:value="formModel.nickName" />
+        <n-form-item-grid-item :span="12" label="是否完成" path="completed">
+          <n-switch>
+            <template #checked>已完成</template>
+            <template #unchecked>未完成</template>
+          </n-switch>
         </n-form-item-grid-item>
-        <n-form-item-grid-item :span="12" label="姓名" path="realName">
-          <n-input v-model:value="formModel.realName" />
-        </n-form-item-grid-item>
-        <n-form-item-grid-item :span="12" label="性别" path="sex">
-          <n-radio-group v-model:value="formModel.sex">
-            <n-radio value="男">男</n-radio>
-            <n-radio value="女">女</n-radio>
-          </n-radio-group>
-        </n-form-item-grid-item>
-        <n-form-item-grid-item :span="12" label="状态" path="status">
-          <n-switch v-model:value="formModel.status" :checked-value="1" :unchecked-value="0" />
-        </n-form-item-grid-item>
-        <n-form-item-grid-item :span="12" label="所属角色" path="roleIds">
-          <n-select v-model:value="formModel.roleIds" :options="sysRoleOptions" />
+        <n-form-item-grid-item :span="12" label="备注" path="note">
+          <n-input v-model:value="formModel.note" />
         </n-form-item-grid-item>
       </n-grid>
       <n-space class="w-full pt-16px" :size="24" justify="end">
@@ -49,11 +30,15 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, reactive, watch, toRefs } from 'vue';
-import type { Ref } from 'vue';
-import type { FormInst, FormItemRule, SelectOption } from 'naive-ui';
-import { fetchAllSysRole } from '@/service';
-import { formRules, createRequiredFormRule, getConfirmPwdRule } from '@/utils';
+import { ref, computed, reactive, watch } from 'vue';
+import type { FormInst, FormItemRule } from 'naive-ui';
+import { createRequiredFormRule } from '@/utils';
+import { fetchCreateTask, fetchUpdateTask } from '~/src/service';
+import { useAuthStore } from '~/src/store';
+
+const auth = useAuthStore();
+
+const tempWorkTime = ref(new Date().getTime());
 
 /**
  * 弹窗类型
@@ -72,7 +57,7 @@ interface Props {
    */
   type?: ModalType;
   /** 编辑的表格行数据 */
-  editData?: ApiSys.SysUser | null;
+  editData?: TaskManagement.Task | null;
 }
 
 defineOptions({ name: 'TableActionModal' });
@@ -102,57 +87,33 @@ const closeModal = () => {
 
 const title = computed(() => {
   const titles: Record<ModalType, string> = {
-    add: '添加用户',
-    edit: '编辑用户'
+    add: '添加任务',
+    edit: '编辑任务'
   };
   return titles[props.type];
 });
 
 const formRef = ref<HTMLElement & FormInst>();
 
-type FormModel = Pick<
-  ApiSys.CreateSysUserParams,
-  'id' | 'username' | 'password' | 'nickName' | 'realName' | 'sex' | 'status' | 'roleIds'
-> & {
-  confirmPassword: string;
-};
+type FormModel = ApiManagement.CreateTaskDto;
 
 const formModel = reactive<FormModel>(createDefaultFormModel());
 
-type FormRuleRequiredKey = Extract<keyof FormModel, 'username' | 'password' | 'confirmPassword'>;
+type FormRuleRequiredKey = Extract<keyof FormModel, 'name'>;
 
 const rules: Record<FormRuleRequiredKey, FormItemRule | FormItemRule[]> = {
-  username: createRequiredFormRule('请输入用户名'),
-  password: formRules.pwd,
-  confirmPassword: getConfirmPwdRule(toRefs(formModel).password)
+  name: createRequiredFormRule('请输入任务名')
 };
 
 function createDefaultFormModel(): FormModel {
   return {
-    id: -1,
-    username: '',
-    password: '',
-    confirmPassword: '',
-    nickName: '',
-    realName: '',
-    sex: '男',
-    status: 1,
-    roleIds: []
+    name: '',
+    description: '',
+    workTime: '',
+    completed: false,
+    note: '',
+    user: auth.userInfo.id
   };
-}
-
-const sysRoleOptions: Ref<SelectOption[]> = ref([]);
-
-async function getSysRoles() {
-  const { data } = await fetchAllSysRole();
-  if (data) {
-    sysRoleOptions.value = data.map(item => {
-      return {
-        label: `${item.name}(${item.alias})`,
-        value: item.id
-      };
-    });
-  }
 }
 
 function handleUpdateFormModel(model: Partial<FormModel>) {
@@ -176,14 +137,16 @@ function handleUpdateFormModelByModalType() {
 }
 
 async function handleSubmit() {
+  formModel.workTime = tempWorkTime.value.toString();
   await formRef.value?.validate();
-  window.$message?.success('新增成功!');
+  if (props.type === 'add') {
+    await fetchCreateTask(formModel);
+  } else if (props.editData) await fetchUpdateTask(props.editData.id, formModel);
+  window.$message?.success('操作成功!');
   closeModal();
 }
 
-function init() {
-  getSysRoles();
-}
+function init() {}
 
 init();
 
@@ -192,6 +155,15 @@ watch(
   newValue => {
     if (newValue) {
       handleUpdateFormModelByModalType();
+    }
+  }
+);
+
+watch(
+  () => props.editData,
+  newValue => {
+    if (newValue) {
+      tempWorkTime.value = new Date(newValue.workTime).getTime();
     }
   }
 );
